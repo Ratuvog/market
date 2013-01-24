@@ -1,0 +1,236 @@
+body
+{
+    background-image: url('/catalog/view/theme/default/image/backgrounds/1.png');
+    text-shadow: 0px 0px 1px #aaa;
+}
+
+.mainFrame
+{
+    /*Цвет*/
+    background-color: #FEFEFE;
+    /*Внутренние отступы*/
+    padding-left: 50px;
+    /*padding-right: 30px;*/
+    padding-top: 40px;
+    padding-bottom: 20px;
+    /*Тень фрейма*/
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.whidofit-brand
+{
+    height: 36px;
+    padding: 2px 20px 2px;
+}
+
+.welcomeHead
+{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.welcomeCallOfReg h1
+{
+    position: relative;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.welcomeHead h1
+{
+    font-size: 45px;
+    margin-left: 0px;
+}
+
+.welcomeHead h1, .welcomeHead p
+{
+    text-align: center;
+}
+
+.marketing .header-icon 
+{
+    float: left;
+    margin: 7px 10px 0 0;
+    opacity: .8;
+}
+
+.marketing h2
+{
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+.unimportant-text
+{
+    color: #999999;
+}
+
+.offset-item1
+{
+    margin-left: 10px;
+}
+
+.offset-item2
+{
+    margin-left: 20px;
+}
+
+.footer
+{
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.footer p
+{
+    text-align: center;
+}
+
+.welcomeButton
+{
+    padding: 0px;
+    width: 180px;
+    height: 40px;
+    line-height: 18px;
+    font-size: 15.5px;
+}
+
+.centerSpan
+{
+    min-height: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.centerSpan .share42init
+{
+    margin-left: 20%;
+
+}
+
+.registButton, .registButton .btn + .btn
+{
+    padding: 5px;
+    float: left;
+    margin: 5px;
+    margin-left: 17px;
+    width: 200px;
+    height: 30px;
+    line-height: 18px;
+    font-size: 15.5px;
+}
+
+.loginForm .add-on
+{
+    width: 50px;
+}
+
+.loginForm .span3
+{
+    width: 220px;
+    margin: 2px 0px;
+    clear: left;
+    float: left;
+    display: inline-block;
+}
+
+.loginModal
+{
+    width: auto;
+}
+
+
+/***for Smartphone***/
+@media handheld, (max-width: 979px) {
+body
+{
+    background:#FEFEFE;
+}
+
+.mainFrame
+{
+    /*Цвет*/
+    background-color: #FEFEFE;
+    /*Внутренние отступы*/
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    /*Тень фрейма*/
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.welcomeHead
+{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.welcomeCallOfReg h1
+{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.centerSpan
+{
+    width: border-box;
+    min-height: 1px;
+    margin-left: 20%;
+    margin-bottom: 10px;
+    margin-right: 20%;
+}
+
+.centerSpan p
+{
+    text-align: left;
+    margin-left: -35%;
+    margin-right: -35%;
+}
+
+.centerSpan .share42init
+{
+    margin-left: -35%;
+    margin-right: -35%;
+}
+
+.loginForm .span3
+{
+    width: 220px;
+    margin: 2px 0px;
+}
+
+}
+
+@media (max-width: 768px)
+{
+.loginModal
+{
+    width: auto;
+}
+
+.registButton, .registButton .btn + .btn
+{
+    margin: 5px;
+    margin-left: 10px;
+}
+
+}
+
+@media (max-width: 480px)
+{
+.loginModal
+{
+    width: auto;
+    left: 10px;
+    right: 10px;
+}
+}

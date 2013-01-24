@@ -1,0 +1,41 @@
+div.progressbar
+{
+    border-color: #24320d;
+    border-radius: 13px;
+    -o-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+div.progressbar div
+{
+    background: red;
+    height: 18px;
+    text-align: center;
+    font-size: 13px; font-weight: bold; color: #fefff3; line-height: 20px;
+
+    border-radius: 13px;
+    -o-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -webkit-border-radius: 13px;
+}
+
+div.canvas
+{
+    width: 250px;
+    float: left;
+}
+
+div.progressbar :hover
+{
+    cursor: pointer;
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.5); /* Для Firefox */
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+div.counter_head
+{
+    text-align: center;
+    font-size: 15px; font-weight: bold; color: #fff; line-height: 20px;
+}

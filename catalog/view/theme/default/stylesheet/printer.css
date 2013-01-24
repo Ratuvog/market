@@ -1,0 +1,22 @@
+.print-simple
+{
+    margin: 0;
+    float:left;
+    font-family: "Trebuchet MS";
+    font-size:18px;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+.title
+{
+    font-weight: bold;
+}
+
+.logo
+{
+    float: left;
+}

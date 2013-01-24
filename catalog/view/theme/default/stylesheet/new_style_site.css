@@ -1,0 +1,1849 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+}
+body {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+position: relative;
+}
+
+.content {
+padding-bottom: 232px;
+}
+.footer {
+height: 232px;;
+width: 100%;
+position: absolute;
+bottom: 0;
+}
+
+a
+{
+    color: #000000;
+}
+
+.my-window-button-close
+{
+	cursor: pointer;
+	float: left;
+	margin-left: 20px;
+}
+
+.wf-cool-input-edit input,.wf-cool-input-edit textarea
+{
+    border: none;
+    outline: none;
+    background: inherit;
+    text-align: center;
+}
+
+.wf-standart-a
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+}
+
+body {
+	background-image: url('../img/backgrounds/1.png');
+	width: auto;
+}
+
+.text-head
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+.wf-shadow
+{
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.5); /* Для Firefox */
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+.wf-small-icon
+{
+	display: block;
+	width: 25px;
+	height: 25px;
+}
+
+.wf-msmall-icon
+{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.wf-low-icon
+{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.wf-low-empty
+{
+    width: 30px;
+    height: 30px;
+}
+
+.wf-low-icon-money-coins_small
+{
+    background: url('http://whidofit.ru/img/money-coins_small.png') no-repeat
+}
+
+.wf-low-icon-check
+{
+    background: url('http://whidofit.ru/img/check_low.png') no-repeat;
+}
+
+.wf-low-icon-save
+{
+    background: url('http://whidofit.ru/img/save_low.png') no-repeat;
+}
+
+.wf-low-icon-close
+{
+    background: url('http://whidofit.ru/img/close_low.png') no-repeat;
+}
+
+.wf-low-icon-pen
+{
+    background: url('http://whidofit.ru/img/pen_low.png') no-repeat;
+}
+
+.wf-low-icon-sherlock
+{
+    background: url('http://whidofit.ru/img/sherlock_low.png') no-repeat;
+}
+
+.wf-low-icon-iphoto
+{
+    background: url('http://whidofit.ru/img/iphoto_low.png') no-repeat;
+}
+
+.wf-low-icon-gmail
+{
+    background: url('http://whidofit.ru/img/Gmail_low.png') no-repeat;
+}
+
+.wf-low-icon-printer
+{
+    background: url('http://whidofit.ru/img/printeralt_low.png') no-repeat;
+}
+
+.wf-low-icon-calendar
+{
+    background: url('http://whidofit.ru/img/calend_low.png') no-repeat;
+}
+
+.wf-low-icon-plus
+{
+    background: url('http://whidofit.ru/img/plus_low.png') no-repeat;
+}
+
+.wf-low-icon-lookbusy
+{
+    background: url('http://whidofit.ru/img/lookbusy_low.png') no-repeat;
+}
+
+.wf-low-icon-warning
+{
+    background: url('http://whidofit.ru/img/warning_low.png') no-repeat;
+}
+
+.wf-msmall-icon-pen
+{
+    background: url('http://whidofit.ru/img/textedit_msmall.png') no-repeat;
+}
+
+.wf-msmall-icon-strelka
+{
+    background: url('http://whidofit.ru/img/strelka_msmall.png') no-repeat;
+}
+
+.wf-low-icon-edit
+{
+    background: url('http://whidofit.ru/img/textedit_low.png') no-repeat;
+}
+
+.wf-low-icon-delete
+{
+    background: url('http://whidofit.ru/img/close_low.png') no-repeat;
+}
+.wf-wery-small-icon
+{
+    display: block;
+    width: 15px;
+    height: 15px;
+}
+
+.wf-wery-small-icon-warning
+{
+    display: block;
+    background: url('http://whidofit.ru/img/warning-wery-small.png') no-repeat;
+}
+
+
+.wf-wery-small-icon-strelka
+{
+    background: url('http://whidofit.ru/img/strelka_very_small.png') no-repeat;
+}
+
+.wf-small-icon-list-small
+{
+    background: url('http://whidofit.ru/img/list_small.png') no-repeat;
+}
+
+.wf-small-icon-apple
+{
+    background: url('http://whidofit.ru/img/apple.png') no-repeat;
+}
+
+.wf-small-icon-portfolio
+{
+    background: url('http://whidofit.ru/img/portfolio.png') no-repeat;
+}
+
+.wf-small-icon-biteps
+{
+    background: url('http://whidofit.ru/img/man.png') no-repeat;
+}
+
+.wf-small-icon-warning
+{
+    background: url('http://whidofit.ru/img/warning-small.png') no-repeat;
+}
+
+.wf-small-icon-dumbbells
+{
+    background: url('http://whidofit.ru/img/dumbbells.png') no-repeat;
+}
+
+.wf-small-icon-user
+{
+	background: url('http://whidofit.ru/img/user-male_small.png') no-repeat;
+}
+
+.wf-small-icon-compas
+{
+    background: url('http://whidofit.ru/img/compas.png') no-repeat;
+}
+
+.wf-small-icon-list
+{
+	background: url('http://whidofit.ru/img/list_small.png') no-repeat;
+}
+
+.wf-small-icon-close
+{
+	background: url('http://whidofit.ru/img/power_small.png') no-repeat;
+}
+
+.wf-small-icon-stat
+{
+	background: url('http://whidofit.ru/img/stats_small.png') no-repeat;
+}
+
+.content-panel-top-menu
+{
+    margin-top: 5px;
+}
+
+.content-data-iconsset
+{
+    cursor: pointer;
+}
+
+.content-text-data-table-t tr:hover .content-data-iconsset
+{
+    display: block;
+}
+
+.content-text-set
+{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.content-cool-edit
+{
+    border-radius: 13px;
+    border: 1px solid #7f7f7f;
+    background-color: #ece9e9;
+}
+
+.content-garant
+{
+    height: 232px;
+}
+
+.content-data-iconsset:hover
+{
+    cursor: pointer;
+}
+
+.top-panel
+{
+	/*width: 100%;*/
+	height: 40px;
+	background: url('http://whidofit.ru/img/top-panel.png') repeat-x;
+	/*padding: 10px;*/
+	padding-left: 80px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+.top-panel-header
+{
+	list-style: none;
+	margin: 10px;
+	margin-left: 0;
+}
+
+.top-panel-header
+{
+	float: left;
+}
+
+.top-panel-icons
+{
+
+}
+
+.top-panel-header li
+{
+	float: left;
+	margin-right: 15px;
+}
+
+.top-panel-header li.top-header-split-item
+{
+
+}
+
+.top-panel-header-a
+{
+	text-decoration: none;
+	font-weight: bold;
+	color: #000000;
+}
+
+.top-panel-icons
+{
+	display: block;
+	float: left;
+	position: relative;
+	top: -5px;
+	margin-right: 5px;
+}
+
+a.top-panel-header-counter
+{
+	text-decoration: underline;
+}
+
+.top-panel-header-a:hover
+{
+	text-decoration: underline;
+}
+
+.top-panel-left-button
+{
+	float: right;
+}
+
+.top-panel-button li
+{
+	list-style: none;
+	float: left;
+	margin-right: 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.top-panel-left-button a
+{
+	display: block;
+	border: 1px solid #d20303;
+	border-radius: 13px;
+	width: 195px;
+	height: 25px;
+	text-align: center;
+}
+
+.top-panel-header-a-rasp
+{
+	display: block;
+	margin: 3px;
+}
+
+/* Контент */
+.content
+{
+	margin-left: 90px;
+	margin-right: 40px;
+}
+
+.content-header1-logo
+{
+	width: 124px;
+	height: 40px;
+	background: url('http://whidofit.ru/img/logo_new.png') no-repeat;
+	float: left;
+}
+
+.content-header1-feedback
+{
+	width: 203px;
+	height: 34px;
+	float: right;
+	background: url('http://whidofit.ru/img/feedback.png') no-repeat;
+}
+
+.content-header1-feedback>div
+{
+    border-radius: 13px;
+    padding-left: 10px;
+    width: 150px;
+
+}
+
+.content-header1-feedback>div a
+{
+    text-decoration: none;
+    color: #45610D;
+}
+
+.content-header1-feedback>div a:hover
+{
+    color: black;
+}
+
+.content-header1-feedback td
+{
+    padding: 5px;
+}
+
+.content-header1-feedback-menu
+{
+    position: relative;
+    opacity: 0;
+    left: -9999px;
+    top: 34px;
+
+}
+
+.content-header1-feedback:hover .content-header1-feedback-menu
+{
+    opacity: 1;
+    left: 10px;
+}
+
+.content-panel
+{
+	height: 35px;
+	background: url('http://whidofit.ru/img/panel2-bg.png') repeat-x;
+	border-radius: 13px;
+	margin-top: 10px;
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,0.5); /* Для Firefox */
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.5); /* Параметры тени */
+   text-align: center;
+}
+
+.content-panel span.head-text
+{
+	display: block;
+	padding: 5px;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+div.content-text
+{
+	font-family: Tahoma,Geneva,Kalimati,sans-serif;
+	font-size: 10pt;
+        /*font-weight: bold;*/
+	margin-top: 10px;
+}
+
+.content-text p
+{
+	margin-bottom: 15px;
+	line-height:25px;
+}
+
+.content-text-part1
+{
+	width: 50%;
+}
+
+.content-footer-bg
+{
+	width: 100px;
+	height: 100px;
+}
+
+.content-footer
+{
+	margin-bottom: 20px;
+}
+
+.content-footer-panel
+{
+	width: 100%;
+}
+
+.content-footer-bg1
+{
+	background: url('http://whidofit.ru/img/footer-bg1.png') no-repeat;
+}
+
+.content-footer-bg2
+{
+	background: url('http://whidofit.ru/img/footer-bg2.png') no-repeat;
+}
+
+.content-footer-bg3
+{
+	background: url('http://whidofit.ru/img/footer-bg3.png') no-repeat;
+}
+
+.content-footer-bg4
+{
+	background: url('http://whidofit.ru/img/footer-bg4.png') no-repeat;
+}
+
+.content-footer-bg5
+{
+	background: url('http://whidofit.ru/img/footer-bg5.png') no-repeat;
+}
+
+.content-footer-bg6
+{
+	background: url('http://whidofit.ru/img/footer-bg6.png') no-repeat;
+}
+
+.content-footer-center-reg
+{
+	width: 310px;
+	height: 40px;
+	background: url('http://whidofit.ru/img/reg.png') no-repeat;
+}
+
+.content-footer-center
+{
+	width: 10px;
+}
+
+.content-footer-center-socseti li
+{
+	float: left;
+	margin-left: 20px;
+	list-style: none;
+}
+
+.content-footer-center-socseti li:first-child
+{
+	margin-left: 0;
+}
+
+.content-footer-center-socseti div
+{
+	width: 32px;
+	height: 32px;
+}
+
+.content-footer-center-ss-vk
+{
+	background: url('http://whidofit.ru/img/vk.png') no-repeat;
+}
+
+.content-footer-center-ss-twitter
+{
+	background: url('http://whidofit.ru/img/twitter.png') no-repeat;
+}
+
+.content-footer-center-ss-fb
+{
+	background: url('http://whidofit.ru/img/fb.png') no-repeat;
+}
+
+.content-footer-center-text
+{
+	margin-bottom: 5px;
+}
+
+.footer
+{
+	height: 232px;
+	background: url('http://whidofit.ru/img/bg-footer.png') repeat-x;
+}
+
+.footer-text
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.footer table
+{
+	height: 100%;
+}
+
+.footer td
+{
+	height: 25%;
+}
+
+.my-footer-socnetw
+{
+    padding-top: 15px;
+}
+
+/* SHARE42!!!! */
+
+#share42 {
+  display: inline-block;
+  padding: 6px 0 0 6px;
+  background: #FFF;
+  border: 1px solid #E9E9E9;
+  border-radius: 4px;
+}
+#share42:hover {
+  background: #F6F6F6;
+  border: 1px solid #D4D4D4;
+  box-shadow: 0 0 5px #DDD;
+}
+#share42 a {opacity: 0.5;}
+#share42:hover a {opacity: 0.7}
+#share42 a:hover {opacity: 1}
+
+/* END SHARE42 */
+
+/* ALL MENU */
+
+.content-panel-menu-item-content
+{
+    float: left;
+    margin-top: 5px;
+}
+
+.content-panel-menu-item-content-str
+{
+    float: left;
+    margin-top: 10px;
+}
+
+
+.content-panel-menu-item-content-text
+{
+    float: left;
+}
+
+.content-panel-menu
+{
+    list-style: none;
+    float: left;
+    /*margin-left: 5px;*/
+    position: relative;
+    z-index: 10;
+}
+
+.content-panel-menu-item
+{
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}
+
+.content-panel-menu:hover .content-panel-menu-item
+{
+    left: 20px;
+    opacity: 1;
+}
+
+.content-panel-menu-item li
+{
+    display: block;
+    /*padding: 10px;*/
+    background-color: #ece9e9;
+    border-radius: 13px;
+    margin-bottom: 5px;
+    height: 45px;
+    width: 200px;
+}
+
+.content-panel-menu-item li:hover
+{
+    background: url('http://whidofit.ru/img/menu-item-bg.png') repeat-x;
+}
+
+.content-panel-pay-services
+{
+    float: right;
+    margin-right: 30px;
+}
+
+.content-panel-pay-services li
+{
+    list-style: none;
+    display: inline;
+}
+
+.content-panel-menu-item
+{
+    margin-left: 30px;
+}
+
+.content-panel-menu-item a
+{
+    text-decoration: none;
+}
+
+.content-panel-menu-item a:hover
+{
+    text-decoration: underline;
+}
+
+.content-panel-menu-item-a
+{
+    margin: 20px;
+    position: relative;
+    top: 10px;
+}
+
+.content-panel-pay-services
+{
+    margin-top: 5px;
+}
+
+
+.content-panel-pay-services li
+{
+    margin-left: 20px;
+}
+
+.content-panel-pay-services span
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    cursor: pointer;
+}
+
+.content-panel-pay-services span:hover
+{
+    text-decoration: underline;
+}
+
+.content-panel-pay-services-pay span
+{
+    
+}
+
+.content-panel-pay-services-non-pay span
+{
+    text-decoration: none;
+    color: #45610d;
+}
+
+.content-panel-menu-item-content
+{
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.content-gray-bg
+{
+    background-color: #ece9e9;
+}
+
+.content-text-data-date
+{
+    margin-left: 30px;
+    text-align: center;
+    padding: 5px;
+    border-top-left-radius : 13px;
+    border-top-right-radius: 13px;
+}
+
+.content-text-data-table
+{
+    padding-left:  10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 13px;
+}
+
+.content-text-data-table-t
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.content-text-data-table-t td
+{
+    height: 30px;
+    padding-left:  5px;
+}
+
+.content-data-header
+{
+    margin-left: 30px;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+.content-data-header td
+{
+    padding: 7px;
+}
+
+.content-diet-date-message
+{
+    width: 25%;
+}
+
+.content-diet-text-message
+{
+    width: 74%;
+}
+
+.content-diet-date-create
+{
+    width: 25%;
+}
+
+.content-diet-text-desc
+{
+    width: 40%;
+}
+
+.content-diet-text-comment
+{
+    width: 35%;
+}
+
+.conten-diet-footer
+{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+.content-diet-footer-content
+{
+    width: 10%;
+
+}
+
+.content-diet-footer-content-area
+{
+    height: 200px;
+}
+
+.content-diet-footer-content-button-ok
+{
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+.content-diet-footer-content-area
+{
+    margin-right: 30px;
+    border-radius: 13px;
+}
+
+.content-diet-footer-content-text
+{
+    padding: 15px;
+}
+
+.content-diet-footer-content-text textarea
+{
+    width: 100%;
+    height: 100%;
+    resize: none;
+}
+
+.content-diet-footer-content-header
+{
+    text-align: center;
+    padding-top: 5px;
+}
+
+.content-diet-footer-content-button-ok
+{
+    /*padding-right: 15px;*/
+}
+
+.content-diet-footer-content-text
+{
+    height: 100px;
+}
+
+/* ЦИКЛ ТРЕНИРОВОК */
+
+.content-data-buttons
+{
+    margin-top: 30px;
+}
+
+.content-data-button-item
+{
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.content-data-button-item-img
+{
+    float: left;
+}
+
+.content-data-button-button
+{
+    float: left;
+    margin-left: 10px;
+    position: relative;
+    top: 5px;
+}
+
+.content-cycl
+{
+    margin-bottom: 30px;
+}
+
+.content-cykl-data-period
+{
+    width: 15%;
+}
+
+.content-cykl-data-weekdays
+{
+    width: 20%;
+}
+
+.content-cykl-data-problems
+{
+    width: 18%;
+}
+
+.content-cykl-data-comments
+{
+    width: 30%;
+}
+
+
+
+#add_cyckl_tren th,#add_cyckl_tren td
+{
+    padding: 5px;
+}
+
+.add_cykl_underline
+{
+    border-bottom: 1px solid #e06666;
+}
+
+.add_cykl_edit
+{
+    width: 100px;
+}
+
+.add_cykl_edit-t
+{
+    width: 98%;
+}
+
+.add_cykl_edit_button_b:hover
+{
+    cursor: pointer;
+}
+
+.add_cykl_edit td
+{
+    width: 98%;
+}
+
+.add_cykl_naimen,.add_cykl_coment
+{
+    width: 100%;
+}
+
+.add_cykl_naimen input,.add_cykl_comenmt input
+{
+    border: 0;
+    outline: none;
+    background-color: inherit;
+    width: 90%;
+    margin-left: 7px;
+}
+
+.add_cykl_edit_date:hover
+{
+    cursor: pointer;
+}
+
+.add_cykl_edit_time_begin input, .add_cykl_edit_time_end input
+{
+    border: 0;
+    outline: none;
+    width: 96%;
+    margin-left: 5px;
+    background-color: inherit;
+}
+
+#edit_date table
+{
+    width: 100%;
+}
+
+#edit_date td
+{
+    padding: 5px;
+}
+
+.edit_day_tren_dayset td
+{
+    padding: 5px;
+}
+
+.edit_day_tren_dayitem
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    /*width: 100%;*/
+    cursor: pointer;
+    background: inherit;
+    border-radius: inherit;
+}
+
+span.edit_day_tren_selectitem
+{
+    background: url("http://whidofit.ru/img/panel2-bg.png") repeat-x;
+}
+
+.my_select_button
+{
+    float: right;
+    margin-right: 10px;
+}
+
+.my_select_items
+{
+    position: fixed;
+    z-index: 5;
+    left: -99999px;
+    opacity: 0;
+    border-radius: 13px;
+}
+
+.my_select_items td
+{
+    height: 20px;
+}
+
+.my_select_items tr:hover td
+{
+    background: url('http://whidofit.ru/img/panel2-bg.png') repeat-x;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+/*.my_select:hover .my_select_items
+{
+    left: inherit;
+    opacity: 1;
+}*/
+
+table.my_select_items_show
+{
+    left: inherit;
+    opacity: 1;
+}
+
+.my_select_items td
+{
+    padding: 5px;
+}
+
+.my_select_textarea-t
+{
+    padding-left: 10px;
+    float: left;
+}
+
+span.my_select_placeholder
+{
+    color: #7F7F7F;
+}
+
+.add_cykl_edit_addtren
+{
+    cursor: pointer;
+}
+
+.add_cykl_upr input
+{
+    border: 0;
+    background: inherit;
+    margin-left: 5px;
+    outline: none;
+    width: 90%;
+    text-align: center;
+}
+
+
+.add_cykl_edit_repeat
+{
+    padding-left: 8px;
+    padding-right: 5px;
+    width: 88%;
+}
+
+.add_cykl_edit_repeat input
+{
+    border: 0;
+    background: inherit;
+    outline: none;
+    margin-right: 5px;
+}
+
+.add_cykl_edit_dayitem td
+{
+    padding: 5px;
+}
+
+.add_cykl_upr
+{
+    width: 200px;
+}
+
+.add_cykl_edit_addtren
+{
+    display: none;
+}
+
+.add_cykl_edit_dayitem tr:hover .add_cykl_edit_addtren
+{
+    display: block;
+}
+
+.add_cyckl_tren_edit_daySet
+{
+    marign-top: 30px;
+}
+
+.add_cyckl_tren_edit_daySet td
+{
+    padding: 5px;
+    width: 50px;
+}
+
+.add_cyckl_tren_edit_daySet div
+{
+    padding: 5px;
+}
+
+.add_cyckl_tren_edit_daySet div:hover
+{
+    cursor: pointer;
+}
+
+.edit_tren_table .add_cykl_underline
+{
+    padding: 10px;
+}
+
+.edit_tren_edit_date
+{
+    cursor: pointer;
+}
+
+.edit_tren_edit_time
+{
+    cursor: pointer;
+}
+
+.edit_tren_edit_name
+{
+    width: 150px;
+    padding: 0 8px;
+}
+
+.edit_tren_edit_name input
+{
+    width: 98%;
+}
+
+.edit_tren_edit_duration input
+{
+    width: 90%;
+    margin-left: 7px;
+}
+
+.edit_tren_edit_repeat
+{
+    width: 89px;
+    padding-left: 10px;
+}
+
+.edit_tren_edit_repeat input
+{
+    width: 61px;
+}
+
+.edit_tren_edit_comment
+{
+    width: 180px;
+    height: 50px;
+}
+.edit_tren_edit_comment textarea
+{
+    width: 93%;
+    height: 95%;
+    resize: none;
+    text-align: left;
+    margin-left: 6px;
+    margin-top: 2px;
+}
+
+
+.edit_tren_edit_weight_and_repeat
+{
+    width: 150px;
+}
+
+.edit_tren_edit_weight_and_repeat_button
+{
+    cursor: pointer;
+}
+
+#edit_time td
+{
+    padding: 5px;
+}
+
+.edit_time_input
+{
+    width: 170px;
+}
+
+/* Лист питания */
+
+.content-panel-top-menu
+{
+    float: left;
+    margin-left: 40px;
+}
+
+.content-panel-top-menu li
+{
+    display: inline;
+    margin-right: 20px;
+}
+
+a.content-panel-top-menu-a-active
+{
+    text-decoration:underline;
+}
+
+a.content-panel-top-menu-a-active:hover
+{
+    cursor: pointer;
+}
+
+a.content-panel-top-menu-a-nonactive
+{
+    text-decoration: none;
+}
+
+a.content-panel-top-menu-a-nonactive:hover
+{
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.content-food-data-time
+{
+    width: 15%;
+}
+
+.content-food-data-naimen
+{
+    width: 20%;
+}
+
+.content-food-data-weight
+{
+    width: 10%;
+}
+
+.content-food-data-comment
+{
+    width: 38%;
+}
+
+.content-text-data-table-t td
+{
+    padding-left: 5px;
+}
+
+.content-text-data-table-t tr:hover
+{
+    background-color: #CECECE;
+}
+
+td.wf-low-empty
+{
+    width: 49px;
+    float: right;
+}
+
+
+/* Конец листа питания */
+
+/* Платные сервисы */
+
+.wf-pay-services
+{
+    position: fixed;
+    z-index: 4;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 70px;
+}
+
+.wf-pay-services-buttons div
+{
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.wf-pay-services-buttons-stat
+{
+    background: url('http://whidofit.ru/img/you_stat.png');
+}
+
+.wf-pay-services-buttons-diet
+{
+    background: url('http://whidofit.ru/img/you_diet.png');
+}
+
+.wf-pay-services-buttons-tren
+{
+    background: url('http://whidofit.ru/img/you_tren.png');
+}
+
+/* Конец платных сервисов */
+
+/* Временной интервал */
+
+.content-data-datarange
+{
+    float: right;
+}
+
+.content-data-datarange div
+{
+    float: left;
+    margin-left: 20px;
+}
+
+.content-data-datarange input
+{
+    width: 90%;
+    margin-left: 7px;
+}
+/* КОнец временного интервала */
+
+
+/* Мои параметры */
+
+.content-params-data-height, .content-params-data-weight, .content-params-data-fat
+{
+    width: 20%;
+}
+
+.content-params-data-gtb
+{
+    height: 23%;
+}
+
+/* Конец моих параметров */
+
+
+/* Мои данные */
+
+.content-data-data-sleep,.content-data-data-walking,.content-data-data-nerver, .content-data-data-smok, .content-data-data-viski
+{
+    width: 17%;
+}
+
+/* Конец моих данных */
+
+.my-users-male
+{
+    width: 64px;
+    height: 64px;
+    background: url('http://whidofit.ru/img/user-male.png') no-repeat;
+}
+
+.my-users-female
+{
+    width: 64px;
+    height: 64px;
+    background: url('http://whidofit.ru/img/user-female.png') no-repeat;
+}
+
+/* Профиль */
+
+.content-profile
+{
+    width: 100%;
+}
+
+.content-profile-blocs
+{
+    padding: 10px;
+}
+
+ .content-profile-blocs-header
+ {
+     text-align: center;
+     padding-top: 5px;
+     margin-bottom: 10px;
+ }
+
+ .content-profile-blocs td
+ {
+     padding: 5px;
+ }
+
+
+ .content-profile-blocs>div
+ {
+     border-radius: 13px;
+     background-color: #ece9e9;
+     height: 100%;
+ }
+
+ .content-profile-item
+ {
+     padding: 10px;
+     margin: 10px;
+     border-radius: 13px;
+     background-color: #ece9e9;
+     height: 100%;
+ }
+
+ .content-profile-icon-warning
+ {
+     float: left;
+     margin-left: 5px;
+     margin-top: 2px;
+ }
+
+ .content-profile-blocs-content-text td
+ {
+     padding-bottom: 5px;
+ }
+
+ .content-stat-block
+ {
+     width: 33%;
+     height: 20px;
+ }
+
+ .content-stat-params-img div
+ {
+     height: 30px;
+ }
+
+ .content-profile-blocs-content
+ {
+     padding: 5px;
+ }
+
+ div.content-profile-blocs-header
+ {
+     font-size: 14px;
+ }
+
+ .content-profile-savebutton
+ {
+     width: 100%;
+ }
+
+ .content-profile-savebutton-content div
+ {
+     cursor: pointer;
+     text-decoration: underline;
+ }
+/* Конец моего профиля */
+
+/* Внешний вид окон */
+
+.my-window-table
+{
+    width: 100%;
+}
+
+.my-window-table th
+{
+    border-bottom: 1px solid #d20303;
+}
+
+.my-window-table td, .my-window-table th
+{
+    padding: 5px;
+}
+
+.my-window-table tr:nth-of-type(even)
+{
+    background-color: #ECE9E9;
+}
+
+.my-window-table
+{
+    border-collapse: collapse;
+}
+
+/* Конец внешнего вида окон */
+
+/* Окна добавления параметров */
+
+.add-data-sleeps input, .add-data-walking input, .add-data-nerve input, .add-data-cigarette input
+{
+    margin-left: 7px;
+    width: 80%;
+}
+
+.add-data-date input
+{
+    margin-left: 6px;
+    width: 90%;
+}
+
+/* Конец добавления парметров */
+
+/* Добавление питания */
+
+.add-food-date
+{
+    width: 200px;
+}
+
+.add-food-date input
+{
+    margin-left: 5px;
+    width: 93%;
+}
+
+.add-food-naimen
+{
+    width: 200px;
+}
+
+.add-food-naimen input
+{
+    margin-left: 5px;
+    width: 93%;
+}
+
+.add-food-numeric
+{
+    width: 120px;
+}
+
+
+.add-food-numeric input
+{
+    width: 90px;
+    margin-left: 7px;
+}
+/* Конец добваления питания */
+
+.content-data-datarange-img
+{
+    float: left;
+    margin-left: 15px;
+    cursor: pointer;
+    position: relative;
+    top: -6px;
+}
+
+#my-window-auth table
+{
+    width: 100%;
+}
+
+#my-window-auth div
+{
+    margin: 5px;
+    text-align: center;
+    outline: none;
+}
+
+.content-auth-login
+{
+    margin-left: 5px;
+    width: 90%;
+}
+
+/* Окно обратной связи */
+
+#my-window-feedback td.my-window-feedback-cell
+{
+    padding: 10px;
+}
+
+/* Коне окна обратной связи */
+
+.my-window-feedback-text
+{
+    width: 90%;
+}
+
+.my-window-feedback-workarea
+{
+    width: 100%;
+}
+
+.my-window-feedback-text textarea
+{
+    width: 95%;
+    height: 95%;
+    margin-top: 10px;
+    text-align: left;
+    resize: none;
+}
+
+ /* Окна тренировок */
+
+/*.wf-small-text input, .wf-small-text textarea
+{
+    font-size: 8pt !important;
+}*/
+
+.edit_tren_edit_date
+{
+    width: 130px;
+}
+.edit_tren_edit_date input
+{
+    width: 90%;
+    margin-left: 7px;
+}
+
+.edit_tren_edit_duration
+{
+    width: 150px;
+}
+
+.edit_tren_edit_duration input
+{
+    width: 93%;
+    margin-left: 5px;
+}
+
+.add_tren_append_rec
+{
+    width: 100%;
+}
+
+.add_tren_append_recbutton
+{
+    float: right;
+}
+
+.add_tren_append_rec
+{
+    margin-top: 10px;
+}
+
+.edit_tren_cheating
+{
+    width: 150px;
+}
+
+.edit_tren_cheating span
+{
+    text-align: center;
+}
+
+.edit_tren_edit_weight_and_height
+{
+    float: right;
+    cursor: pointer;
+}
+ /* КОНЕЦ окон тренировок */
+
+ /* Страница регистрации */
+
+ .reg-content
+ {
+     border-collapse: collapse;
+ }
+
+ .reg-content td
+ {
+     padding: 5px;
+ }
+ .reg-input
+ {
+     width: 200px;
+ }
+
+ .reg-input input
+ {
+     margin-left: 5px;
+     width: 95%;
+ }
+
+
+ .reg-content-ok
+ {
+     margin-top: 20px;
+     width: 100%;
+ }
+
+ .reg-content-ok-button
+ {
+     cursor: pointer;
+ }
+
+ .reg-content-wrap
+ {
+     width: 100%;
+ }
+
+ .reg-content-center
+ {
+     width: 250px;
+ }
+ /* Конец страницы регистрации */
+
+ .add_cykl_edit_repeats
+ {
+     width: 180px;
+ }
+
+ .edit_tren_edit_weight_and_repeat_button
+ {
+     width: 100%;
+ }
+
+ .edit_tren_edit_weight_and_repeat_t
+ {
+     width: 100%;
+ }
+
+ .edit_tren_editday_text
+ {
+     float: left;
+     margin-right: 10px;
+
+ }
+
+ .edit_tren_edit_w_and_r_button_d
+ {
+     width: 120px;
+ }
+
+ div.edit_tren_edit_w_and_r_button_d
+ {
+
+ }
+
+ .edit_tren_editday
+ {
+     float: left;
+ }
+
+ div.edit_tren_editday_text
+ {
+     color: #7F7F7F;
+ }
+
+ .add_tren_append_recbutton{
+     cursor: pointer;
+ }
+/* css for timepicker */
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+/*END css for timepicker */
+
+
+/* noty */
+span.noty_text
+{
+    font: 1em/1.5 "PT Sans",Georgia,Palatino,"Palatino Linotype",Times,"Times New Roman",serif !important;
+    font-weight: bold !important;
+    font-size: 13px !important;
+}
+
+/* Профиль */
+
+.profile-payment-number
+{
+    width: 10%;
+}
+
+.profile-payment-data
+{
+    width: 15%;
+}
+
+.profile-payment-operation
+{
+    width: 35%;
+}
+
+.profile-payment-status
+{
+    width: 15%;
+}
+
+.content-profile-head-img
+{
+    position: relative;
+    left: 5px;
+    top: 2px;
+    float: left;
+}
+
+/* Конец профиля */
+/* end noty */
+/* END ЦИКЛ ТРЕНИРОВОК */
+/* END ALL MENU */

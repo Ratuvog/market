@@ -1,0 +1,79 @@
+/* God I hate Microsoft! */
+#header #cart {
+	width: 400px;
+}
+#header #cart .heading {
+	position: relative;
+	right: 0px;
+	margin-right: 0px;
+}
+#header #cart .content {
+
+}
+#header #search {
+	position: inherit;
+	float: right;
+}
+#header .button-search {
+	top: 1px;
+}
+#header #search input {
+	padding: 12px 55px 0px 15px;
+	height: 39px;
+}
+#breadcrumbs span {
+    background: url('../image/breadcrumb.png') 4px 0px no-repeat;
+	position: absolute;
+}
+/* menu */
+#menu ul li {
+	position: relative;
+}
+#menu ul li div {
+	z-index: 5;
+}
+#menu ul li.active div {
+	display: block;
+}
+.success, .warning, .attention, .information {
+	position: relative;
+}
+.success .close, .warning .close, .attention .close, .information .close {
+	position: absolute;
+	right: 10px;
+}
+.box-product > div {
+	display: inline;
+}
+.product-grid > div {
+	display: inline;
+}
+/* button */
+.prduct-info a.button span {
+	line-height: 12px;
+	display: block;
+}
+/* reveal-modal */
+.reveal-modal-bg { 
+	background: url('../image/transparent.png') repeat;
+}
+#footer {
+	overflow: hidden;
+}
+#footer-menu .footer-links .home {
+	position: relative;
+	top:-28px;
+}
+#artsearch .button-artsearch {
+	border-left: none;
+}
+#artsearch input {
+	padding: 4px 33px 1px 4px;
+}
+.reveal-modal .modal .contents .cart .minimum {
+	width: 100%;
+	clear: both;
+}
+.box-news-story > div {
+	display: inline; 
+}

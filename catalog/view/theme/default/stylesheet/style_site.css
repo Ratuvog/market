@@ -1,0 +1,1463 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+input
+{
+	outline: none;
+}
+
+.my-pretty-table-add-header
+{
+	text-shadow: grey 1px 1px 3px, white 0 0 1em;
+	text-align: center;
+	color: black;
+    font-weight: bold;
+}
+
+.my-pretty-table-header
+{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.cur-page
+{
+    text-shadow: #9FEE00 0px 0px 5px, #9FEE00 0 0 1em;
+    color: black;
+}
+
+.backlight:hover
+{
+    text-shadow: #9FEE00 0px 0px 5px, #9FEE00 0 0 1em;
+    color: black;
+}
+
+.ui-datepicker,.ui-dialog
+{
+	font-family: "Arial", sans-serif;
+	font-size: 10pt;
+}
+
+.my-pretty-input
+{
+	padding: 10px;
+	border-radius: 13px;
+    background-color: #FFFFFF;
+}
+
+.gradient
+{
+    background-color: #FFFFFF;
+    background: #FFFFFF; /* Для старых браузров */
+    background: -moz-linear-gradient(top, #FFFFFF, #ceffb2); /* Firefox 3.6+ */
+    /* Chrome 1-9, Safari 4-5 */
+    background: -webkit-gradient(linear, left top, left bottom,
+    color-stop(0%,#FFFFFF), color-stop(100%,#ceffb2));
+    /* Chrome 10+, Safari 5.1+ */
+    background: -webkit-linear-gradient(top, #FFFFFF, #ceffb2);
+    background: -o-linear-gradient(top, #FFFFFF, #ceffb2); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #FFFFFF, #ceffb2); /* IE10 */
+    background: linear-gradient(top, #FFFFFF, #ceffb2); /* CSS3 */
+}
+
+.my-control-select-arrow
+{
+	display: block;
+	float: left;
+	cursor: pointer;
+}
+
+.my-control-select-text
+{
+	width: 170px;
+	cursor: pointer;
+}
+
+.my-control-select-wrapper ul
+{
+	position: fixed;
+	z-index: 100;
+}
+
+
+.my-control-select-wrapper li
+{
+	
+	width: 200px;
+}
+
+.my-control-select-wrapper li:hover
+{
+	background-color: #E90000;
+	color: #FFFFFF;
+}
+
+.my-control-select-wrapper li
+{
+	display: block;
+	padding: 5px;
+	background-color: #FFFFFF;
+	margin: 5px;
+	border: 1px solid #E90000;
+}
+
+.my-control-select-text input
+{
+	float: left;
+}
+
+.my-pretty-input input
+{
+	border:none;
+	border-radius: 5px;
+}
+
+.my-shadow
+{
+	-moz-box-shadow: 0 5px 10px rgba(0,0,0,0.5); /* Для Firefox */
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+.my-login-panel
+{
+	width: 300px;
+	height: 200px;
+}
+
+.my-login-panel ul
+{
+	list-style: none;
+}
+
+#login-panel
+{
+	padding: 10px;	
+}
+
+.my-login-panel li
+{
+	padding: 10px;
+	display: block;
+	width: 100%;
+	
+}
+
+.my-input-login
+{
+	margin-bottom: 10px;
+}
+
+#login-panel
+{
+	background-color: #cccccc;	
+}
+
+.my-input-login input
+{
+	width: 100%;
+}
+
+.my-texedit-small
+{
+	background: url('http://whidofit.ru/img/textedit_small.png');
+	width: 16px;
+	height: 16px;
+}
+
+.my-arrow-small
+{
+	background: url('http://whidofit.ru/img/arrow_small.png') no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+.my-plus-high
+{
+	background: url('http://whidofit.ru/img/plus_high.png');
+	width: 40px;
+	height: 40px;
+}
+
+.my-lookbusy-low
+{
+	background: url('http://whidofit.ru/img/lookbusy_low.png');
+	width: 30px;
+	height: 30px;
+}
+
+.my-lookbusy-high
+{
+	background: url('http://whidofit.ru/img/lookbusy_high.png');
+	width: 40px;
+	height: 40px;
+}
+
+.my-close-low
+{
+	background: url('http://whidofit.ru/img/close_low.png');
+	width: 30px;
+	height: 30px;
+}
+
+.my-check-low
+{
+	background: url('http://whidofit.ru/img/check_low.png');
+	width: 30px;
+	height: 30px;
+}
+
+.my-check-high
+{
+	background: url('http://whidofit.ru/img/check_high.png');
+	width: 40px;
+	height: 40px;
+}
+
+.my-img-empty-low
+{
+	
+	width: 30px;
+	height: 30px;
+}
+
+.my-empty-small
+{
+	display: block;
+	width: 16px;
+	height: 16px;
+}
+
+.my-img-ok-small
+{
+	background: url('http://whidofit.ru/img/ok_small.png') no-repeat;
+}
+
+.my-img-close-small
+{
+	background: url('http://whidofit.ru/img/close_small.png') no-repeat;
+}
+
+.my-window
+{
+	display: none;
+	position: absolute;
+	z-index: 1000;
+}
+
+.my-window-background
+{
+	background: #000000;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	opacity: 0.9;
+}
+
+.my-window-content-panel
+{
+	background: #CCCCCC;
+	border-radius: 13px;
+	padding: 10px;
+	opacity: 1;
+}
+
+.my-window-button-close
+{
+	cursor: pointer;
+	float: left;
+	margin-left: 20px;
+}
+
+.my-window-button-ok
+{
+	cursor: pointer;
+}
+
+.my-window-button-top
+{
+	position: relative;
+	top: -15px;
+	padding-left: 30px;
+}
+
+.my-window-button-bottom
+{
+	padding-left: 30px;
+	position: relative;
+	top: 15px;
+}
+
+body
+{
+	width: 100%;
+	background-color: #CCCCCC;
+	font-family: "Arial";
+}
+
+.my-header-background
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	height: 120px;
+    width: inherit;
+}
+
+.my-header-background img
+{
+    width: inherit;
+}
+
+.my-stok-content-background
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	height: 100%;
+
+}
+
+.my-content-pay-items div
+{
+	text-align: center;
+	color: #FFFFFF;
+	width: 120px;
+	height: 119px;
+	cursor: pointer;
+	margin: 20px;
+}
+
+.my-window-my-stat-button-ok
+{
+	cursor: pointer;
+}
+
+.my-window-my-stat-controls-code,.my-window-my-stat-controls-online
+{
+	display: none;
+}
+
+.my-window-my-stat-opl-neg
+{
+	color: #FF0000;
+}
+
+.my-window-my-stat-opl-pos
+{
+	color: #008000;
+}
+
+.my-window-my-stat-opl-content td
+{
+	padding: 5px;
+}
+
+.my-window-my-stat-opl-content
+{
+	width: 100%;
+}
+
+.my-window-my-stat-controls td
+{
+	padding: 5px;
+}
+
+.my-content-pay-panel
+{
+	position: fixed;
+	float: center;
+	bottom: 0px;
+	width: 100%;
+}
+
+.my-content-pay-items-stat
+{
+	background: url('http://whidofit.ru/img/my_stat.png');
+}
+
+.my-content-pay-items-diet
+{
+	background: url('http://whidofit.ru/img/my_diet.png');
+}
+
+.my-content-pay-items-tren
+{
+	background: url('http://whidofit.ru/img/my_tren.png');
+}
+
+.my-header
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 110px;
+	z-index: 2;
+	width: 100%;
+}
+
+
+.my-header-logo
+{
+	background: url('http://whidofit.ru/img/logo.png') no-repeat;
+	width: 33%;
+	height: 94px;
+	margin-left: 10px;
+	float: left;
+}
+
+.my-header-logo-reg
+{
+	background: url('http://whidofit.ru/img/logo.png') no-repeat;
+	width: 20%;
+	height: 94px;
+	margin-left: 10px;
+	float: left;
+}
+
+.my-header-action
+{
+	margin-top: 10px;
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+
+.my-header-action-reg
+{
+	margin-top: 10px;
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+.my-header-action-content
+{
+	width: 100%;
+}
+
+.my-control-window-background
+{
+	position: fixed;
+	z-index: 10000;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #AAAAAA;
+	opacity: 0.9;
+}
+
+.my-control-window-area-button-ok
+{
+	position: relative;
+	top: 20px;
+	display: block;
+	margin-left: 10px;
+	float: left;
+	left: 200px;
+}
+
+.my-control-window-area-button-close
+{
+	position: relative;
+	top: 20px;
+	display: block;
+	margin-left: 10px;
+	float: left;
+	left: 200px;
+}
+
+.my-control-window-area
+{
+	position: absolute;
+	z-index: 10001;
+	width: 300px;
+	height: 250px;
+}
+
+.my-control-window-area textarea
+{
+	border: none;
+	width: 300px;
+	height: 200px;
+	resize: none;
+}
+
+a.my-header-small-a
+{
+	font-size: 16pt;
+}
+
+a.my-header-big-a
+{
+	text-decoration: none;
+	color: #000000;
+	font-size: 16pt;
+}
+
+a.my-header-big-a:hover
+{
+	text-decoration: underline;
+}
+
+a.my-header-small-a
+{
+	text-decoration: none;
+	color: #000000;
+	font-size: 12pt;
+}
+
+a.my-header-small-a:hover
+{
+	text-decoration: underline;
+}
+
+div.my-header-action a
+{
+	color: #373737;
+	font-size: 20px;
+}
+
+
+.my-header-action-a
+{
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 15pt;
+}
+
+.my-content
+{
+	/*margin-top: 20px;*/
+	width: 99%;
+	padding-left: 10px;
+}
+
+.my-header-action-a
+{
+	position: relative;
+	left: 50px;
+}
+
+.my-header-action-a:hover
+{
+	text-decoration: underline;
+}
+
+.my-header-action-enter
+{
+	margin-bottom: 12px;
+	display: block;
+}
+
+
+.my-header-feedback
+{
+	margin-top: 10px;
+	height: 70px;
+	float: right;
+	text-align: left;
+}
+
+.my-header-feedback-button
+{
+	width: 300px;
+	height: 58px;
+	background: url('http://whidofit.ru/img/button3.png') no-repeat;
+	padding-top: 12px;	
+	padding-left: 7px;
+}
+
+.my-wraper-content
+{
+	margin: 0 20px 20px 20px;
+	width: 98%;
+}
+
+.my-wraper-content a
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+.my-wraper-content a:hover
+{
+	text-decoration: underline;
+}
+
+.my-menu-general
+{
+	width: 24%;
+	float: left;
+	position: relative;
+	top: -5px;
+}
+
+.my-menu-general-background
+{
+	position: relative;
+	height: 80px;
+	z-index: 1;
+}
+
+
+.my-menu-general-text
+{
+	position: relative;
+	z-index: 2;
+	top: -45px;
+	left: 50px;
+	font-size: 13pt;
+	font-weight: bold;
+}
+
+.my-menu-general-text ul
+{
+	list-style: none;
+}
+
+.my-menu-items
+{
+	height: 80px;
+	width: 74%;
+	float: left;
+	font-size: 10pt;
+    font-weight: bold;
+}
+
+
+
+.my-menu-items-background
+{
+	position: relative;
+	z-index: 1;
+	float: left;
+	top: 13px;
+}
+
+.my-menu-items-text
+{
+	position: relative;
+	z-index: 2;
+	left: 25px;
+	top: -30px;
+}
+
+.my-menu-items-text li
+{
+	list-style: none;
+	display: block;
+	float: left;
+	margin-right: 25px;
+}
+
+
+.my-menu-items-pro
+{
+	float: right;
+	margin-right: 50px;
+}
+
+.my-menu-items-pro a
+{
+	color: #c2c2c2;
+}
+
+.my-content-controls-add-img
+{
+	float: left;
+}
+
+.my-content-controls-add
+{
+	cursor: pointer;
+	float: left;
+	margin-right: 20px;
+}
+
+.my-content-controls-add-text
+{
+	float: left;
+	margin-left: 10px;
+	position: relative;
+	top: 10px;
+}
+
+.my-content-controls-date-period
+{
+	float: right;
+	margin-right: 30px;
+	margin-top: 8px;
+}
+
+.my-content-controls-date-period li
+{
+	margin: 2px;
+	display: block;
+	float: left;
+}
+
+.my-content-controls-date-period input
+{
+	border: none;
+	width: 90%;
+	height: 90%;
+}
+
+.my-content-trenings-text
+{
+	position: relative;
+	top: -10px;
+	height: 25px;
+	width: 100px;
+	padding: 2px;
+	border-radius: 13px;
+	background-color: #FFFFFF;
+}
+
+.my-period-text
+{
+    margin: 10px;
+    height: 25px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 13px;
+    background-color: #FFFFFF;
+}
+
+.my-content-tranings-list
+{
+	border-collapse: collapse;
+	margin-bottom: 10px;
+    border-radius: 13px;
+    text-align: center;
+
+}
+
+.my-content-tranings-list
+{
+	border: 1px solid #d7d3d8;
+}
+
+.my-content-tranings-list tr:last-child
+{
+	border-bottom: none;
+}
+.my-content-tranings-list  td:last-child
+{
+    border: none;
+}
+
+.my-content-tranings-list caption
+{
+	width: 100%;
+}
+
+.my-subtranings-list
+{
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    border-radius: 13px;
+    text-align: center;
+
+}
+
+.my-subtranings-list td
+{
+    border: 1px solid #d7d3d8;
+}
+
+.my-content-tranings-list caption
+{
+    width: 100%;
+}
+
+.my-content-tranings-list-header
+{
+	background-color: #FFFFFF;
+	width: 150px;
+	height: 20px;
+	border-top-left-radius: 13px;
+	border-top-right-radius: 13px;
+	margin-left: 30px;
+	padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.my-content-trenings
+{
+	width: 98%;
+}
+
+.my-content-tranings-list
+{
+	width: 100%;
+}
+
+.my-content-tranings-list td
+{
+	padding: 5px;
+}
+
+.my-content-tranings-list
+{
+	min-height: 30px;
+	background-color: #FFFFFF;
+	border-radius: 13px;
+}
+
+
+
+.my-content-tranings-list-empty
+{
+	width: 90%;
+}
+
+.my-content-tranings-list tr:hover .my-td-sherlock-low
+{
+	background: url('http://whidofit.ru/img/sherlock_low.png');
+	cursor: pointer;
+}
+
+.my-content-tranings-list tr:hover .my-td-print-low
+{
+    background: url('http://whidofit.ru/img/print.png');
+    cursor: pointer;
+}
+
+.my-setperiod-but
+{
+    background: url('http://whidofit.ru/img/check_low.png');
+}
+
+.my-setperiod-but:hover
+{
+    cursor: pointer;
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.5); /* Для Firefox */
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5); /* Параметры тени */
+
+}
+
+
+.my-content-tranings-list tr:hover
+{
+    background-color: #ceffb2;
+}
+
+.statistic-content tr:hover
+{
+    background-color: #ceffb2;
+}
+.my-content-tranings-list tr:hover .my-td-textedit-low
+{
+	background: url('http://whidofit.ru/img/textedit_low.png');
+	cursor: pointer;
+}
+
+.my-content-tranings-list tr:hover .my-td-delete-low
+{
+    background: url('http://whidofit.ru/img/close_low.png');
+    cursor: pointer;
+}
+
+.my-menu-general-text:hover .my-menu-general-head-menu-subpunkts
+{
+	left: 0;
+	padding-top: 10px;
+	opacity: 1;
+} 
+
+.my-menu-general-head-menu-subpunkts
+{
+	display: block;
+	width: 200px;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Firefox */
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+	position: absolute;
+	left: -9999px;
+	opacity: 0;
+	background: #FFFFFF;
+   	padding: 10px;
+   	border-radius: 13px;
+}
+
+.my-content-reg
+{
+	width: 100%;
+}
+
+.my-content-reg td
+{
+	width: 200px;
+	height: 300px;
+}
+
+.my-content-reg-input
+{
+	float: left;
+	width: 95%;
+}
+
+.my-content-reg ul
+{
+	list-style: none;
+}
+
+.my-content-reg li
+{
+	margin-top: 10px;
+}
+
+.my-content-reg form
+{
+	width: 400px;
+}
+
+.my-content-reg .my-empty-small
+{
+	float: left;
+}
+
+.my-content-reg-submit
+{
+	cursor: pointer;
+}
+
+.my-content-reg-submit-button
+{
+	margin-left: 20px;
+}
+
+.my-content-plus-500-logo
+{
+	width: 100%;	
+}
+
+.my-content-plus-500-img
+{
+	background: url('http://whidofit.ru/img/500r.png') no-repeat;
+	width: 502px;
+	height: 154px;
+}
+
+.my-content-plus500-text
+{
+	margin: 20px 0 20px 0;
+	float: left;
+	width: 70%;
+}
+
+.my-content-plus500-text li
+{
+	margin-bottom: 5px;
+}
+
+.my-content-plus500-text h3
+{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.my-content-plus-500-regs
+{
+	
+	width: 600px;
+	padding: 10px;
+	border-radius: 13px;
+	background-color: #e90000;
+}
+
+.my-content-plus-500-regs a.my-content-plus-500-reglink
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.my-content-plus-500-regs a.my-content-plus-500-reglink:hover
+{
+	text-decoration: underline;
+}
+
+
+.my-content-plus500-counter
+{
+	float: left;
+	width: 25%;
+}
+
+.my-content-plus500-counter-content
+{
+	width: 100%;
+	text-align: center;
+}
+
+a.my-content-plus500-counter-content-link
+{
+	margin-bottom: 10px;
+	text-decoration: underline;
+}
+
+a.my-content-plus500-counter-content-link:hover
+{
+	text-decoration: none;
+}
+
+.my-content-plus500-body-counter
+{
+	width: 100;
+	background-color: #FFFFFF;
+	border-radius: 13px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.my-stok-content-index-text
+{
+	width: 70%;
+	padding-right: 100px;
+}
+
+.my-stok-content-index-counter
+{
+	width: 30%;
+}
+
+.my-window-add-uprag-table
+{
+	border-collapse: collapse;
+}
+
+.my-window-add-uprag-table td
+{
+	border-bottom: 1px solid #e90000;
+	padding: 5px 5px 5px 5px;
+}
+
+.my-window-add-uprag-table
+{
+	width: 100%;
+}
+
+.my-window-add-uprag-table input
+{
+	width: 85%;
+}
+
+.my-window-add-uprag-name
+{
+	width: 25%;
+}
+
+.my-window-add-uprag-direct
+{
+	width: 20%;
+}
+
+.my-window-add-uprag-curr-povt td
+{
+	width: 220px;
+	padding-bottom: 10px;
+}
+
+.my-window-add-uprag-curr-povt td>div
+{
+	width: 200px;
+}
+
+.my-window-add-uprag-curr-povt input,.my-window-add-uprag-curr-povt div
+{
+	float: left;
+	margin-right: 5px;
+	text-align: center;
+}
+
+.my-window-add-uprag-curr-povt .my-window-add-upr-weight
+{
+	width: 20%;
+}
+
+.my-window-add-uprag-curr-povt .my-window-add-upr-repeat
+{
+	width: 35%;
+}
+
+.my-window-add-uprag-curr-povt .my-window-add-upr-cheating
+{
+	width: 37%;
+	text-align: center;
+}
+
+.my-window-add-uprag-time
+{
+	width: 10px;	
+	cursor: pointer;
+}
+
+#my-window-edit-raspred table
+{
+	width: 100%;
+}
+
+#my-window-edit-raspred td div
+{
+	margin: 5px 0 5px 0;
+}
+
+#my-window-add-uprag
+{
+	width: 90%;
+}
+
+.my-window-add-uprag-war
+{
+	cursor: pointer;
+}
+
+.my-window-add-uprag-war input
+{
+	float: left;
+}
+
+.my-window-add-uprag-war span
+{
+	float: left;
+	display: block;
+}
+
+.my-window-add-uprag-comment
+{
+	width: 20%;
+}
+
+#my-window-edit-time, .my-window-edit-time-cikl
+{
+	width: 100%;
+}
+
+#my-window-edit-time table, .my-window-edit-time-cikl table
+{
+	width: 100%;
+}
+
+#my-window-edit-time td,.my-window-edit-time-cikl td
+{
+	padding: 0 10px 0 10px;
+}
+
+#my-window-count-repeat td
+{
+	padding: 0 10px 0 10px;
+}
+
+.my-window-count-repeat-cheating
+{
+	cursor: pointer;
+}
+
+div.my-active-elements
+{
+	background-color: #e90000;
+	color: #FFFFFF;
+}
+
+#my-window-count-repeat table
+{
+	border-collapse: collapse;
+}
+
+#my-window-count-repeat td
+{
+	padding: 5px 5px 5px 5px;
+	
+}
+
+.my-content-reg select
+{
+	width: 100%;
+}
+
+.my-top20
+{
+	margin-top: 20px;
+}
+
+.my-window-params-text
+{
+	float: left;
+	margin-right: 10px;
+}
+
+#my-window-add-params input
+{
+	float: left;
+	width: 75px;
+}
+
+#my-window-add-params table
+{
+	width: 100%;
+}
+
+#my-window-add-params td
+{
+	width: 45%;
+	padding: 5px;
+}
+
+.my-santimetr
+{
+	width: 150px;
+	height: 200px;
+	background: url('http://whidofit.ru/img/santimetr.png') no-repeat;
+}
+
+.my-fotos-list
+{
+	padding: 10px;
+}
+
+.my-content-index-header-logo
+{
+	background: url('http://whidofit.ru/img/logo_w.png') no-repeat;
+	width:157px;
+	height: 157px;
+}
+
+.my-content-index-header-text-lt
+{
+	position: relative;
+	left: 15px;
+	top: 10px;
+}
+
+.my-content-index-header-text-rt
+{
+	position: relative;
+	left: -15px;
+	top: 10px;
+}
+
+.my-content-index-header-text-lb
+{
+	position: relative;
+	top: -10px;
+	left: 70px;
+}
+
+.my-content-index-text
+{
+	margin: 30px;
+}
+
+.my-content-index-header-text-rb
+{
+	position: relative;
+	top: -10px;
+	left: -20px;
+}
+
+.my-content-index-header-wrapper
+{
+	width: 100%;
+}
+
+.my-foto-empty
+{
+	width: 100px;
+	height: 130px;
+}
+
+.my-active-foto
+{
+	cursor: pointer;
+}
+
+#my-window-add-foto td
+{
+	margin: 10px;
+}
+
+#my-window-add-foto table
+{
+	width: 100%;
+}
+
+.my-window-add-foto-razm, .my-window-add-foto-comment
+{
+	width: 40%;
+}
+
+.my-window-add-foto-delete
+{
+	text-align: center;
+}
+
+.my-window-add-foto-comment-header
+{
+	text-align: center;
+	margin-bottom: 10px;
+	width: 100%;
+	border-bottom: 1px solid #e90000;
+}
+
+#edit-duration
+{
+	cursor: pointer;
+}
+
+#edit-raspred
+{
+	cursor: pointer;
+}
+
+.my-edit-repeat-easy
+{
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.my-edit-repeat-easy-name
+{
+	width: 150px;
+}
+
+.my-edit-repeat-easy-count
+{
+	width: 100px;
+}
+
+
+.my-window-add-cycle-workarea-diff
+{
+	margin-left: 5px;
+}
+
+.my-content-tips-list
+{
+	border-collapse: collapse;
+	margin-bottom: 10px;
+	width: 100%;
+	min-height: 30px;
+	background-color: #FFFFFF;
+	border-radius: 13px;
+	padding: 10px;
+}
+
+.my-content-tips-list textarea
+{
+	resize: none;
+	border: none;
+}
+
+.my-content-tips-list-select
+{
+	padding-left: 30px;
+}
+
+.my-content-tips-list td, .my-content-tips-list th
+{
+	padding: 5px;
+	width: 50%;
+}
+
+.add_spec
+{
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+
+.my-content-stat-table
+{
+	width: 100%;
+}
+
+.my-content-stat-table-item
+{
+	width: 33%;
+}
+
+.my-content-stat-table-header
+{
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.my-content-stat-table-wrap
+{
+	border-radius: 13px;
+	background-color: #FFFFFF;
+	padding: 10px;
+	height: 100%;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.my-window-add-uprag-footer div
+{
+	float: right;
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+.my-footer
+{
+	width: 100%;
+}
+
+
+a.my_diet_pay,a.my_fit_pay,a.my_stat_pay
+{
+	text-decoration: underline;
+}
+a.my_diet_pay:hover,a.my_fit_pay:hover,a.my_stat_pay:hover
+{
+	text-decoration: none;
+}
+.my-footers
+{
+	width: 100%;
+	margin-top: 800px;
+}
+
+.my-footer-socnetw
+{
+	margin-left: 30px;
+}
+
+.my-content-profile
+{
+	margin:30px;
+	width: auto
+}
+
+.my-content-profile td
+{
+	padding: 10px;
+}
+
+.my-content-about
+{
+	margin: 30px;
+	width: 80%;
+}
+
+
+/* css for timepicker */
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }

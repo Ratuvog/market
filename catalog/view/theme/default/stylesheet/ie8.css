@@ -1,0 +1,16 @@
+/* God I hate Microsoft! */
+#header #search input {
+	padding: 12px 55px 0px 15px;
+	height: 39px;
+}
+/* reveal-modal */
+.reveal-modal-bg { 
+	background: url('../image/transparent.png') repeat;
+}
+#artsearch .button-artsearch {
+	margin-top: -23px;
+	border-left: none;
+}
+#artsearch input {
+	padding: 4px 33px 0px 4px;
+}

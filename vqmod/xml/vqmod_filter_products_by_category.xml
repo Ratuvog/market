@@ -1,0 +1,561 @@
+<modification>
+	<id>Фильтр товаров для OpenCart v.1.5.2.1</id>
+	<version>1.1.1</version>
+	<vqmver>2.1.5</vqmver>
+	<author>by Palcet - www.maxzon.ru</author>
+
+	<file name="admin/controller/common/header.php">
+        <operation>
+            <search position="after"><![CDATA[
+            $this->data['text_country'] = $this->language->get('text_country');
+            ]]></search>
+            <add><![CDATA[
+		// Start filter
+		$this->data['text_filter'] = $this->language->get('text_filter');
+		// End filter
+            ]]></add>
+        </operation>
+		
+		<operation>
+            <search position="after"><![CDATA[
+            $this->data['category'] = $this->url->link('catalog/category', 'token=' . $this->session->data['token'], 'SSL');
+            ]]></search>
+            <add><![CDATA[
+// Start filter
+			$this->data['filter'] = $this->url->link('catalog/filter', 'token=' . $this->session->data['token'], 'SSL');
+// End filter
+            ]]></add>
+        </operation>
+	</file>
+	<file name="admin/language/russian/common/header.php">
+        <operation>
+            <search position="after"><![CDATA[
+            $_['text_category']
+            ]]></search>
+            <add><![CDATA[
+// Start filter
+$_['text_filter']                       = 'Фильтр товаров';
+// End filter
+            ]]></add>
+        </operation>
+	</file>
+    <file name="admin/view/template/common/header.tpl">
+        <operation>
+            <search position="after"><![CDATA[
+            <li><a href="<?php echo $product; ?>"><?php echo $text_product; ?></a></li>
+            ]]></search>
+            <add><![CDATA[
+          <!--Start filter-->
+          <li><a href="<?php echo $filter; ?>"><?php echo $text_filter; ?></a></li>
+          <!--End filter-->
+            ]]></add>
+        </operation>
+	</file>
+    <file name="admin/controller/catalog/product.php">
+        <operation>
+            <search position="after" index="1"><![CDATA[
+            $this->document->setTitle($this->language->get('heading_title'));
+            ]]></search>
+            <add><![CDATA[
+// Start filter
+		$this->data['tab_filter'] = $this->language->get('tab_filter');
+// End filter
+            ]]></add>
+        </operation>
+		<operation>
+            <search position="after"><![CDATA[
+            $this->data['tab_data'] = $this->language->get('tab_data');
+            ]]></search>
+            <add><![CDATA[
+// Start filter
+        $this->data['tab_filter'] = $this->language->get('tab_filter');
+// End filter
+            ]]></add>
+        </operation>
+		<operation>
+            <search position="before"><![CDATA[
+            if (isset($this->request->post['product_layout'])) {
+            ]]></search>
+            <add><![CDATA[
+// Start filter
+	$this->load->model('catalog/filter');
+	$this->load->model('catalog/product');
+
+    $category_options = array();
+
+   if (isset($this->request->get['product_id'])) {
+    $product_id=$this->request->get['product_id'];
+    }
+    else
+    {
+
+    }
+
+   	$this->load->model('catalog/category');
+
+	$this->data['categories'] = $this->model_catalog_category->getCategories(0);
+
+	if (isset($this->request->post['product_category'])) {
+			$this->data['product_category'] = $this->request->post['product_category'];
+		} elseif (isset($this->request->get['product_id'])) {
+			$this->data['product_category'] = $this->model_catalog_product->getProductCategories($this->request->get['product_id']);
+		} else {
+			$this->data['product_category'] = array();
+	}
+
+    $path_category="";
+	for ($i=0; $i<count($this->data['product_category']); $i++)
+	{
+		  if ($i!=count($this->data['product_category']))
+		    $path_category.=	$this->data['product_category'][$i]."_";
+		  else
+		  {
+		  	$path_category.=	$this->data['product_category'][$i];
+		  }
+	}
+
+    $this->data['category_options_error']="";
+
+    if ($path_category != '') {
+			$parts = explode('_', $path_category);
+
+		  $results = $this->model_catalog_filter->getOptionByCategoriesId($parts);
+			if ($results) {
+			  foreach($results as $option) {
+          $category_options[] = array(
+            'option_id' => $option['option_id'],
+            'name' => $option['name'],
+            'category_option_values' => $this->model_catalog_filter->getOptionValues($option['option_id'])
+          );
+        }
+      } else {
+        $this->data['category_options_error'].= 'Этой категории товаров не присвоен ни один фильтр';
+      }
+		} else {
+      $this->data['category_options_error'] .= 'Сначала выберите категорию товаров';
+    }
+
+    if (isset($this->request->get['product_id'])) {
+			$product_id = $this->request->get['product_id'];
+		} else {
+			$product_id = 0;
+		}
+
+
+	$product_info = $this->model_catalog_product->getProductValues($product_id);
+
+	if (isset($this->request->post['product_to_value_id'])) {
+			$product_to_value_id = $this->request->post['product_to_value_id'];
+		} elseif (isset($product_info)) {
+			$product_to_value_id = $this->model_catalog_product->getProductValues($product_id);
+		} else {
+			$product_to_value_id = array();
+	}
+
+    $this->data['language_id'] = $this->config->get('config_language_id');
+    $this->data['category_options'] = $category_options;
+    $this->data['product_to_value_id'] = $product_to_value_id;
+// End filter
+            ]]></add>
+        </operation>
+	</file>
+    <file name="admin/language/russian/catalog/product.php">
+        <operation>
+            <search position="after"><![CDATA[
+            $_['heading_title']
+            ]]></search>
+            <add><![CDATA[
+// Start filter
+$_['tab_filter']             = 'Опции фильтра';
+// End filter         
+            ]]></add>
+        </operation>
+	</file>
+	<file name="admin/model/catalog/product.php">
+        <operation>
+            <search position="before" index="1"><![CDATA[
+            if (isset($data['product_special'])) {
+            ]]></search>
+            <add><![CDATA[
+// Start filter
+		if (isset($data['product_to_value_id'])) {
+			foreach ($data['product_to_value_id'] as $option_id => $value_id) {
+				$this->db->query("INSERT INTO " . DB_PREFIX . "product_to_value SET product_id = '" . (int)$product_id . "', option_id = '" . (int)$option_id . "', value_id = '" . (int)$value_id . "'");
+			}
+		}
+// End filter         
+            ]]></add>
+        </operation>
+		<operation>
+            <search position="before" index="1"><![CDATA[
+            $this->db->query("DELETE FROM " . DB_PREFIX . "product_special WHERE product_id = '" . (int)$product_id . "'");
+            ]]></search>
+            <add><![CDATA[
+// Start filter
+        $this->db->query("DELETE FROM " . DB_PREFIX . "product_to_value WHERE product_id = '" . (int)$product_id . "'");
+
+		if (isset($data['product_to_value_id'])) {
+			foreach ($data['product_to_value_id'] as $option_id => $value_id) {
+				$this->db->query("INSERT INTO " . DB_PREFIX . "product_to_value SET product_id = '" . (int)$product_id . "', option_id = '" . (int)$option_id . "', value_id = '" . (int)$value_id . "'");
+			}
+		}
+// End filter         
+            ]]></add>
+        </operation>
+		<operation>
+            <search position="before"><![CDATA[
+           $data = array_merge($data, array('product_image' => $this->getProductImages($product_id)));
+            ]]></search>
+            <add><![CDATA[
+// Start filter			
+            $data = array_merge($data, array('product_to_value_id' => $this->getProductValues($product_id)));
+// End filter        
+            ]]></add>
+        </operation>
+		<operation>
+            <search position="before" index="2"><![CDATA[
+			$this->db->query("DELETE FROM " . DB_PREFIX . "product_image WHERE product_id = '" . (int)$product_id . "'");
+            ]]></search>
+            <add><![CDATA[
+// Start filter
+        $this->db->query("DELETE FROM " . DB_PREFIX . "product_to_value WHERE product_id = '" . (int)$product_id . "'");
+// End filter       
+            ]]></add>
+        </operation>
+		<operation>
+            <search position="after" index="10" offset="1"><![CDATA[
+			return $query->row['total'];
+            ]]></search>
+            <add><![CDATA[
+// Start filter
+	public function getProductValues($product_id) {
+		$values_id = array();
+
+		$query = $this->db->query("SELECT p2v.value_id AS value_id FROM " . DB_PREFIX . "product_to_value p2v WHERE p2v.product_id = '" . (int)$product_id . "'");
+
+		foreach ($query->rows as $result) {
+			$values_id[] = $result['value_id'];
+		}
+
+		return $values_id;
+	}
+// End filter     
+            ]]></add>
+        </operation>
+	</file>
+	<file name="admin/view/template/catalog/product_form.tpl">
+        <operation>
+            <search position="before"><![CDATA[
+            <div id="tab-attribute">
+            ]]></search>
+            <add><![CDATA[
+<!--Start filter-->
+       <div id="tab-filter">
+
+ <?php
+
+ if (isset($category_options_error) and $category_options_error!="")
+ {
+    echo $category_options_error;
+ }
+
+	if ($category_options) {
+    ?>
+      <table class="form">
+    <?php
+      foreach ($category_options as $option)
+      {
+          ?>
+          <tr>
+          <td width="20%"><b><?php echo $option['name'];?></td>
+          <td width="80%">
+
+          <?php
+          if ($option['category_option_values'])
+          {
+          ?>
+            <select name="product_to_value_id[<?php echo $option['option_id']; ?>]">
+            <option value="">Не выбрано</option>
+
+            <?php
+            foreach ($option['category_option_values'] as $value)
+            {
+              if (in_array($value['value_id'], $product_to_value_id))
+              {
+              ?>
+                <option value="<?php echo $value['value_id'];?>" selected="selected"><?php echo $value['language'][$language_id]['name'];?></option>
+              <?php
+              }
+              else
+              {
+              ?>
+                <option value="<?php echo  $value['value_id'];?>"><?php echo $value['language'][$language_id]['name']; ?></option>
+              <?php
+              }
+            }
+            ?>
+            </select>
+            <?php
+          }
+          ?>
+          </td>
+
+        </tr>
+        <?php
+      }
+      ?>
+      </table>
+     <?php
+    }
+ ?>
+       </div>
+<!--End filter-->          
+            ]]></add>
+        </operation>
+		<operation>
+            <search position="before"><![CDATA[
+            $('input[name=\'related\']').autocomplete({
+            ]]></search>
+            <add><![CDATA[
+<!--Start filter-->
+$("input[name=\"product_category[]\"]").live('change', function() {
+	getFilterOptionsByCategoryId();
+});
+
+
+<?php if (isset($this->request->get['product_id'])) { ?>
+  <?php $if_product_id = '&product_id=' . $this->request->get['product_id']; ?>
+  getFilterOptionsByCategoryId();
+<?php } else { ?>
+  <?php $if_product_id = ''; ?>
+<?php } ?>
+
+function getFilterOptionsByCategoryId() {
+  var loadURL = '';
+  var fields = $("input[name=\"product_category[]\"]").serializeArray();
+  $.each(fields, function(i, field){
+     if (field.value == '') {
+      loadURL += '';
+     } else {
+      if (loadURL == '') {
+        loadURL += field.value;
+      } else {
+        loadURL += '_' + field.value;
+      }
+     }
+  });
+
+  $('#tab-filter').load('index.php?route=catalog/filter/get&token=<?php echo $token; ?><?php echo $if_product_id; ?>&path=' + loadURL);
+}
+<!--End filter-->
+            ]]></add>
+        </operation>
+		<operation>
+            <search position="replace"><![CDATA[
+            <div id="tabs" class="htabs"><a href="#tab-general"><?php echo $tab_general; ?></a><a href="#tab-data"><?php echo $tab_data; ?></a><a href="#tab-links"><?php echo $tab_links; ?></a><a href="#tab-attribute"><?php echo $tab_attribute; ?></a><a href="#tab-option"><?php echo $tab_option; ?></a><a href="#tab-discount"><?php echo $tab_discount; ?></a><a href="#tab-special"><?php echo $tab_special; ?></a><a href="#tab-image"><?php echo $tab_image; ?></a><a href="#tab-reward"><?php echo $tab_reward; ?></a><a href="#tab-design"><?php echo $tab_design; ?></a></div>
+            ]]></search>
+            <add><![CDATA[
+			<div id="tabs" class="htabs"><a href="#tab-general"><?php echo $tab_general; ?></a><a href="#tab-data"><?php echo $tab_data; ?></a><a href="#tab-links"><?php echo $tab_links; ?></a><!-- Start filter --><a href="#tab-filter"><?php echo $tab_filter; ?></a><!-- End filter --><a href="#tab-attribute"><?php echo $tab_attribute; ?></a><a href="#tab-option"><?php echo $tab_option; ?></a><a href="#tab-discount"><?php echo $tab_discount; ?></a><a href="#tab-special"><?php echo $tab_special; ?></a><a href="#tab-image"><?php echo $tab_image; ?></a><a href="#tab-reward"><?php echo $tab_reward; ?></a><a href="#tab-design"><?php echo $tab_design; ?></a></div>
+            ]]></add>
+        </operation>
+	</file>
+	<file name="catalog/controller/product/category.php">
+        <operation>
+            <search position="before" index="1"><![CDATA[
+            if (isset($this->request->get['page'])) {
+            ]]></search>
+            <add><![CDATA[
+// Start filter
+	   if (isset($this->request->get['filter'])) {
+	        $filter = $this->request->get['filter'];
+	   } else {
+	        $filter = '';
+	   }
+// End filter
+            ]]></add>
+        </operation>
+		<operation>
+            <search position="before" index="2,3,4"><![CDATA[
+            if (isset($this->request->get['limit'])) {
+            ]]></search>
+            <add><![CDATA[
+	        // Start filter
+	        if (isset($this->request->get['filter'])) {
+	          $url .= '&filter=' . $this->request->get['filter'];
+	        }
+	        // End filter
+            ]]></add>
+        </operation>
+		<operation>
+            <search position="before" index="2"><![CDATA[
+            if (isset($this->request->get['page'])) {
+            ]]></search>
+            <add><![CDATA[
+	        // Start filter
+	        if (isset($this->request->get['filter'])) {
+	          $url .= '&filter=' . $this->request->get['filter'];
+	        }
+	        // End filter
+            ]]></add>
+        </operation>
+		<operation>
+            <search position="replace" index="1,2"><![CDATA[
+            $product_total = $this->model_catalog_product->getTotalProducts($data);
+            ]]></search>
+            <add><![CDATA[
+	        // Start filter
+	        $product_total = $this->model_catalog_product->getTotalProducts($data, $filter);
+	        // End filter
+            ]]></add>
+        </operation>
+		<operation>
+            <search position="replace"><![CDATA[
+            $results = $this->model_catalog_product->getProducts($data);
+            ]]></search>
+            <add><![CDATA[
+	        // Start filter
+	        $results = $this->model_catalog_product->getProducts($data, $filter);
+	        // End filter
+            ]]></add>
+        </operation>
+		<operation>
+            <search position="before"><![CDATA[
+            'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+            ]]></search>
+            <add><![CDATA[
+// Start filter
+					'count' => $product_total,
+// End filter
+            ]]></add>
+        </operation>
+	</file>
+	<file name="catalog/model/catalog/product.php">
+        <operation>
+            <search position="replace"><![CDATA[
+public function getProducts($data = array()) {
+            ]]></search>
+            <add><![CDATA[
+// Start filter change
+	    public function getProducts($data = array(), $filter=0) {
+// End filter
+            ]]></add>
+        </operation>
+		<operation>
+            <search position="replace"><![CDATA[
+            $product_data = $this->cache->get('product.' . (int)$this->config->get('config_language_id') . '.' . (int)$this->config->get('config_store_id') . '.' . (int)$customer_group_id . '.' . $cache);
+            ]]></search>
+            <add><![CDATA[
+// Start filter change
+	    $product_data = $this->cache->get('product.' . (int)$this->config->get('config_language_id') . '.' . (int)$this->config->get('config_store_id') . '.' . (int)$customer_group_id . '.'.$filter. '.'. $cache);
+// End filter
+            ]]></add>
+        </operation>	
+		<operation>
+            <search position="before"><![CDATA[
+            $sql .= " GROUP BY p.product_id";
+            ]]></search>
+            <add><![CDATA[
+// Start filter
+    if ($filter)
+    {
+      foreach (explode(';', $filter) as $option) {
+        $datatotal=NULL;
+        $values = explode('=', $option);
+        $datatotal = array();
+        foreach (explode(',', $values[1]) as $value_id) {
+          $query = $this->db->query("SELECT product_id FROM " . DB_PREFIX . "product_to_value WHERE value_id='" . (int)$value_id . "'");
+          if ($query->rows) {
+            foreach($query->rows as $row) {
+              $datatotal[] = $row['product_id'];
+            }
+
+          } else {
+            unset($datatotal);
+          }
+        }
+        if (!empty($datatotal)) {
+          $sql .= "
+          AND p.product_id IN (" . implode(",", $datatotal) . ")";
+        }
+      }
+      //$sql .= " GROUP BY p.product_id";
+    }
+
+    // End filter
+            ]]></add>
+        </operation>
+		<operation>
+            <search position="before" index="3"><![CDATA[
+            $query = $this->db->query($sql);
+            ]]></search>
+            <add><![CDATA[
+ // Start filter
+    if ($filter)
+    {
+      foreach (explode(';', $filter) as $option)
+      {
+        $datatotal=NULL;
+        $values = explode('=', $option);
+        $data = array();
+        foreach (explode(',', $values[1]) as $value_id)
+        {
+           $qsql="SELECT product_id FROM " . DB_PREFIX . "product_to_value WHERE value_id='" . (int)$value_id . "'";
+          $query = $this->db->query($qsql);
+          if ($query->rows) {
+            foreach($query->rows as $row) {
+              $datatotal[] = $row['product_id'];
+            }
+
+
+          } else {
+            unset($datatotal);
+          }
+        }
+
+        if (!empty($datatotal)) {
+
+          $sql .= "
+          AND p.product_id IN (" . implode(",", $datatotal) . ")";
+
+
+
+
+
+        } else {
+          return 0; // запрос на строке 88 ничего не вернул, а общее количество в категории нам не интересно
+        }
+      }
+
+    // print_r($sql);
+
+    }
+    // End filter
+
+/*
+     print_r ("<PRE>");
+          print_r ($sql);
+         print_r ("</PRE>");
+
+
+
+ $file = fopen ("file.txt","a+");
+
+
+    fputs ( $file, $sql);
+
+  fclose ($file);
+  */
+            ]]></add>
+        </operation>
+		<operation>
+            <search position="replace"><![CDATA[
+            public function getTotalProducts($data = array()) {
+            ]]></search>
+            <add><![CDATA[
+// Start filter change
+	    public function getTotalProducts($data = array(), $filter = 0) {
+// End filter
+            ]]></add>
+        </operation>
+	</file>
+</modification>
