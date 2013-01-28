@@ -1,0 +1,198 @@
+<modification>
+
+	<id>oc-modules-folder</id>
+	<version>0.0.1alpha</version>
+	<vqmver>2.1.5-opencart</vqmver>
+	<author>@horechek</author>
+
+	<file name="system/startup.php">
+        <operation>
+            <search position="after"><![CDATA[
+            <?php
+            ]]></search>
+            <add><![CDATA[
+            define('ROOT',  dirname( dirname(dirname(__FILE__))));
+            $app = explode('/', DIR_APPLICATION);
+            $app = $app[count($app) - 2];
+            define('APP',  $app);
+            ]]></add>
+        </operation>
+	</file>
+
+	<file name="system/engine/action.php">
+        <operation>
+            <search position="before"><![CDATA[
+           	if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+            ]]></search>
+            <add><![CDATA[
+            if (!is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+            	$path = explode('/', $path);
+            	if($path[0] == 'module'){
+            	
+            		$file_m = ROOT . '/modules/'.$path[1].'/'.APP.'/controller/' . $path[1]. '.php';
+            		if(!file_exists($file_m)){
+            			$file_m = ROOT . '/modules/'.$path[1].'/'.APP.'/controller/module/' . $path[1]. '.php';
+            		}
+					if (is_file($file_m)) {
+							$this->file = $file_m;
+							$this->class = 'ControllerModule' . preg_replace('/[^a-zA-Z0-9]/', '', $path[1]);
+							array_shift($parts);
+							break;
+					}	
+            	}
+			}
+            ]]></add>
+        </operation>
+	</file>
+
+	<file name="system/engine/loader.php">
+        <operation>
+            <search position="before"><![CDATA[
+           	if (file_exists($file)) {
+            ]]></search>
+            <add><![CDATA[
+			if(file_exists(ROOT . '/modules/'.$model.'/'.APP.'/model/' . str_replace('../', '', $model) . '.php')){
+				$file  = ROOT . '/modules/'.$model.'/'.APP.'/model/' . str_replace('../', '', $model) . '.php';
+				$class = 'ModelModule' . preg_replace('/[^a-zA-Z0-9]/', '', $model);
+				
+				include_once($file);
+				$this->registry->set('model_' . str_replace('/', '_', $model), new $class($this->registry));
+			}
+            ]]></add>
+        </operation>
+	</file>
+
+	<file name="system/engine/controller.php">
+        <operation>
+            <search position="before"><![CDATA[
+           	if (file_exists(DIR_TEMPLATE . $this->template)) {
+            ]]></search>
+            <add><![CDATA[
+			if (!file_exists(DIR_TEMPLATE . $this->template)) {
+			
+				$path = explode('/', $this->template);
+				$module = str_replace('.tpl', '', $path[count($path)-1]);
+				if(APP == 'catalog'){
+					$theme = 'theme/'.$path[0];
+				}else{
+					$theme = 'template';
+				}
+				
+				
+				$file_m = ROOT.'/modules/'.$module.'/'.APP.'/view/'.$theme.'/'.$module.'.tpl';
+				
+				if(!file_exists($file_m)){
+					$file_m = ROOT.'/modules/'.$module.'/'.APP.'/view/'.$theme.'/module/'.$module.'.tpl';
+				}
+				extract($this->data);
+		
+	      		ob_start();
+		  		require($file_m);
+		  		$this->output = ob_get_contents();
+	      		ob_end_clean();
+	      		
+				return $this->output;
+			
+			}
+            ]]></add>
+        </operation>
+	</file>
+
+	<file name="admin/controller/extension/module.php">
+        <operation>
+            <search position="after"><![CDATA[
+           	$files = glob(DIR_APPLICATION . 'controller/module/*.php');
+            ]]></search>
+            <add><![CDATA[
+            
+			$data = opendir (ROOT . '/modules/');
+			while ($folder = readdir ($data)) {
+				 if($folder != '.' && $folder != '..' && $folder != '..' && is_dir(ROOT.'/modules/'.$folder.'/admin/')) {
+				 	if(file_exists(ROOT . '/modules/'.$folder.'/'.APP.'/controller/'.$folder.'.php')){
+					 	$files[] = ROOT . '/modules/'.$folder.'/'.APP.'/controller/'.$folder.'.php';
+					}elseif(file_exists(ROOT . '/modules/'.$folder.'/'.APP.'/controller/module/'.$folder.'.php')){
+						$files[] = ROOT . '/modules/'.$folder.'/'.APP.'/controller/module/'.$folder.'.php';
+					}
+				 }
+			}
+			closedir ($data);
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search position="replace"><![CDATA[
+           	require_once(DIR_APPLICATION . 'controller/module/' . $this->request->get['extension'] . '.php');
+            ]]></search>
+            <add><![CDATA[
+            if(file_exists(DIR_APPLICATION . 'controller/module/' . $this->request->get['extension'] . '.php')){
+            	require_once(DIR_APPLICATION . 'controller/module/' . $this->request->get['extension'] . '.php');
+            }elseif(file_exists(ROOT . '/modules/'.$this->request->get['extension'].'/'.APP.'/controller/'.$this->request->get['extension'].'.php')){
+            	require_once(ROOT . '/modules/'.$this->request->get['extension'].'/'.APP.'/controller/'.$this->request->get['extension'].'.php');
+            }elseif(ROOT . '/modules/'.$this->request->get['extension'].'/'.APP.'/controller/module/'.$this->request->get['extension'].'.php'){
+            	require_once(ROOT . '/modules/'.$this->request->get['extension'].'/'.APP.'/controller/module/'.$this->request->get['extension'].'.php');
+            }
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search position="replace"><![CDATA[
+           	if (!file_exists(DIR_APPLICATION . 'controller/module/' . $value . '.php')) {
+            ]]></search>
+            <add><![CDATA[
+            if (!file_exists(DIR_APPLICATION . 'controller/module/' . $value . '.php') &&
+            !file_exists(ROOT . '/modules/'.$value .'/'.APP.'/controller/'.$value .'.php') &&
+            !file_exists(ROOT . '/modules/'.$value .'/'.APP.'/controller/module/'.$value .'.php')
+            ) {
+            ]]></add>
+        </operation>
+	</file>
+
+	<file name="system/library/language.php">
+        <operation>
+            <search position="after"><![CDATA[
+           	$file = DIR_LANGUAGE . $this->directory . '/' . $filename . '.php';
+            ]]></search>
+            <add><![CDATA[
+            
+            
+			if(!file_exists($file)){
+				$language = explode('/', $this->directory);
+				$language = $language[0];
+				$filename = explode('/', $filename);
+				$filename = $filename[1];
+				$file = ROOT .  '/modules/' . $filename . '/admin/language/' . $language . '/'.$filename.'.php';
+			}
+			
+			if(!file_exists($file)){
+				$file = ROOT .  '/modules/' . $filename . '/admin/language/' . $language . '/module/'.$filename.'.php';
+			}
+		
+            ]]></add>
+        </operation>
+	</file>
+	
+	<file name="admin/controller/user/user_permission.php">
+        <operation>
+            <search position="after"><![CDATA[
+           	$files = glob(DIR_APPLICATION . 'controller/*/*.php');
+            ]]></search>
+            <add><![CDATA[
+            	
+			$data = opendir (ROOT . '/modules/');
+			while ($folder = readdir ($data)) {
+				 if($folder != '.' && $folder != '..' && $folder != '..' && is_dir(ROOT.'/modules/'.$folder.'/admin/')) {
+				 
+				 	if(file_exists(ROOT . '/modules/'.$folder.'/'.APP.'/controller/'.$folder.'.php')){
+					 	$files[] = ROOT . '/modules/'.$folder.'/'.APP.'/controller/'.$folder.'.php';
+					 	
+					}elseif(file_exists(ROOT . '/modules/'.$folder.'/'.APP.'/controller/module/'.$folder.'.php')){
+						$files[] = ROOT . '/modules/'.$folder.'/'.APP.'/controller/module/'.$folder.'.php';
+					}
+				 }
+			}
+			closedir ($data);
+            ]]></add>
+        </operation>
+	</file>
+
+</modification>

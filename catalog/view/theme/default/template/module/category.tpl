@@ -1,31 +1,18 @@
-<div class="box">
-  <div class="box-heading"><?php echo $heading_title; ?></div>
-  <div class="box-content">
-    <div class="box-category">
-      <ul>
-        <?php foreach ($categories as $category) { ?>
-        <li>
-          <?php if ($category['category_id'] == $category_id) { ?>
-          <a href="<?php echo $category['href']; ?>" class="active"><?php echo $category['name']; ?></a>
-          <?php } else { ?>
-          <a href="<?php echo $category['href']; ?>" class="no-active"><?php echo $category['name']; ?></a>
-          <?php } ?>
-          <?php if ($category['children']) { ?>
-          <ul>
-            <?php foreach ($category['children'] as $child) { ?>
-            <li>
-              <?php if ($child['category_id'] == $child_id) { ?>
-              <a href="<?php echo $child['href']; ?>" class="child-active"> - <?php echo $child['name']; ?></a>
-              <?php } else { ?>
-              <a href="<?php echo $child['href']; ?>"> - <?php echo $child['name']; ?></a>
-              <?php } ?>
-            </li>
-            <?php } ?>
-          </ul>
-          <?php } ?>
-        </li>
-        <?php } ?>
-      </ul>
+<div class="row-fluid categoris">
+    <?php foreach ($categories as $category) { ?>
+    <div class="span2 categor-item">
+        <a href="<?=$category['href'];?>"><table width="100%">
+                <tr>
+                    <td class="categor-item-img" align="center"><img src="/catalog/view/theme/default/image/creatin.png" alt="Креатин" /></td>
+                </tr>
+                <tr>
+                    <td class="categor-item-name" align="center">
+                        <?=$category['name'];?>
+                    </td>
+                </tr>
+            </table>
+        </a>
     </div>
-  </div>
+    <? } ?>
+
 </div>

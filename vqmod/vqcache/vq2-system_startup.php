@@ -1,4 +1,10 @@
 <?php
+
+            define('ROOT',  dirname( dirname(dirname(__FILE__))));
+            $app = explode('/', DIR_APPLICATION);
+            $app = $app[count($app) - 2];
+            define('APP',  $app);
+            
 // Error Reporting
 error_reporting(E_ALL);
 
