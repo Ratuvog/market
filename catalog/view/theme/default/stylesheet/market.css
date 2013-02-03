@@ -100,7 +100,7 @@ h3.product-headers {
 }
 
 .cart-button-image{
-    background: url('/img/add-to-cart-white.png') no-repeat;
+    background: url('/catalog/view/theme/default/image/add-to-cart-white.png') no-repeat;
     width: 25px;
     height: 25px;
     background-color: #a1ee04;
@@ -227,4 +227,20 @@ h3.product-headers {
     display: block;
     float: right;
     margin-right: 40px;
+}
+
+.accept-filter {
+    border-bottom: 1px solid #EEE;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+.filter-item-wrap {
+    border-radius: 13px;
+    border: 1px solid #EEE;
+    padding: 3px;
+}
+
+.category-product-card {
+    margin-right: 0px;
 }

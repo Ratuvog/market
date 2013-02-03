@@ -12,6 +12,7 @@ body
     padding-left: 50px;
     /*padding-right: 30px;*/
     padding-top: 40px;
+    padding-right: 20px;
     padding-bottom: 20px;
     /*Тень фрейма*/
     -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
@@ -50,7 +51,7 @@ body
     text-align: center;
 }
 
-.marketing .header-icon 
+.marketing .header-icon
 {
     float: left;
     margin: 7px 10px 0 0;
