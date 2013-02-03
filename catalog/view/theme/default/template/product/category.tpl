@@ -1,17 +1,21 @@
 <?php echo $header; ?><?php echo $column_left; ?>
 <div id="content">
     <?php echo $column_right; ?>
-
+    <div class="breadcrumb">
+    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+    <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+    <?php } ?>
+  </div>
     <?php echo $content_top; ?>
-    <div class="row-fluid">
+    <div class="row-fluid products">
     <?php foreach ($products as $product) { ?>
-        <div class="span3 row-fluid category-product-card">
+        <div class="category-product-card span3 row-fluid ">
             <div class="minicard-header"><?=$product['name'];?></div>
             <div class="minicard-content">
-                <table>
+                <table style="width: 100%">
                     <tbody><tr>
-                            <td><img src="<?=$product['thumb'];?>" alt="<?=$product['name'];?>"></td>
-                            <td>
+                            <td style="width: 40%"><img class="product-img" src="<?=$product['thumb'];?>" alt="<?=$product['name'];?>"></td>
+                            <td style="width: 60%">
                                 <span class="span12 muted" style="margin-left: 5px;">Протеин</span>
                                 <span class="span12 price-product"><h5><?=$product['price'];?></h5></span>
                                 <span class="span12">от 950 грамм</span>
@@ -44,6 +48,6 @@
         </div>
     <? } ?>
     </div>
-  </div>
+
   <?php echo $content_bottom; ?></div>
 <?php echo $footer; ?>

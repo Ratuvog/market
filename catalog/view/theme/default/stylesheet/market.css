@@ -61,11 +61,16 @@ root {
 
 .additional-foto{
     float: left;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 .recommend-product>.span12 {
     margin-bottom: 20px;
+    /*margin-left: 0;*/
+}
+
+.description-product {
+    margin-right: 0;
 }
 
 .foto-product {
@@ -241,6 +246,26 @@ h3.product-headers {
     padding: 3px;
 }
 
-.category-product-card {
+div.category-product-card {
     margin-right: 0px;
+    margin-left: 0px;
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+}
+
+.products>.span3 {
+    margin-left: 0px;
+    margin-right: 20px;
+}
+
+.change-weight label {
+    display: inline !important;
+}
+
+.change-weight input {
+    position: relative;
+    top: -3px;
 }

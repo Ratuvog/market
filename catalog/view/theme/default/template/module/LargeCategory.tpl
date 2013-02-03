@@ -7,7 +7,7 @@
             <? } else { ?>
             <li>
             <? } ?>
-                <a href="<?php echo $child['href']; ?>"><?=$category['name'];?></a>
+                <a href="<?php echo $category['href']; ?>"><?=$category['name'];?></a>
             </li>
             <?php } ?>
         </ul>
