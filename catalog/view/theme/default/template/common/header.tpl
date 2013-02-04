@@ -135,8 +135,7 @@ DD_belatedPNG.fix('#logo img');
                 <button class="btn button-search" type="button"><i class="icon-search"></i></button>
             </div>
             <ul class="nav pull-right" id="cart">
-                <li class="divider-vertical"></li>
-                <li><a href=""><i class="icon-shopping-cart"></i> Товаров нет</a></li>
+                <?=$cart;?>
             </ul>
         </div>
     </div>

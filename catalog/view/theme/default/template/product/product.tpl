@@ -75,6 +75,7 @@
                                                 <option value=""><?php echo $text_select; ?></option>
                                                 <?php foreach ($option['option_value'] as $option_value) { ?>
                                                 <option value="<?php echo $option_value['product_option_value_id']; ?>"><?php echo $option_value['name']; ?>
+                                                    
                                                 </option>
                                                 <?php } ?>
                                             </select>
@@ -110,7 +111,7 @@
                                                 </div>
                                             </div>
                                             <table>
-                                                <tr class="cart-button">
+                                                <tr class="cart-button" onclick="addToCart('<?php echo $product['product_id']; ?>');">
                                                     <td class="cart-button-image"></td>
                                                     <td class="cart-button-text">Добавить в корзину</td>
                                                 </tr>
