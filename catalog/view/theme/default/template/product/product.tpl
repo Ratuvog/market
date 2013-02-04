@@ -39,22 +39,31 @@
                     <!-- Основное описание товара -->
                     <div class="span6">
                                 <span class="span12 row product-card"><span class="span12"><h3 class="product-headers"><?php echo $heading_title; ?> </h3> </span>
-                                    <?php if ($options) { ?>
+                                    <?php if ($options) {
+                                    $i=0;
+                                    ?>
                                     <?php foreach ($options as $option) { ?>
                                         <? if($option['type'] == 'radio') { ?>
                                         <span class="span3"><?php echo $option['name']; ?>: </span>
                                         <span class="span7 change-weight">
-                                            <?php foreach ($option['option_value'] as $option_value) { ?>
+                                            <?php foreach ($option['option_value'] as $option_value) {
+                                            if($i!=0) {
+                                            ?>
                                             <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option_value['product_option_value_id']; ?>" id="option-value-<?php echo $option_value['product_option_value_id']; ?>" />
+                                            <?} else { ?>
+                                            <input type="radio" checked="checked" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option_value['product_option_value_id']; ?>" id="option-value-<?php echo $option_value['product_option_value_id']; ?>" />
+                                            <? }?>
                                             <label for="option-value-<?php echo $option_value['product_option_value_id']; ?>"><?php echo $option_value['name']; ?>
                                                 <?php if ($option_value['price']) { ?>
-                                                (<?php echo $option_value['price_prefix']; ?><?php echo $option_value['price']; ?>)
+                                                (<?php echo $option_value['price']; ?>)
                                                 <?php } ?>
                                             </label><br>
 <!--                                            <label>100 г </label><input type="radio" name="1" value="100" /><br>
                                             <label>200 г </label><input id="l1_200" type="radio" name="1" value="200" /><br>
                                             <label>300 г </label><input id="l1_300" type="radio" name="1" value="300" /><br>-->
-                                            <?}?>
+                                            <?
+                                            $i++;
+                                            }?>
                                         </span>
                                         <?}?>
                                     <?}?>
@@ -66,9 +75,6 @@
                                                 <option value=""><?php echo $text_select; ?></option>
                                                 <?php foreach ($option['option_value'] as $option_value) { ?>
                                                 <option value="<?php echo $option_value['product_option_value_id']; ?>"><?php echo $option_value['name']; ?>
-                                                    <?php if ($option_value['price']) { ?>
-                                                    (<?php echo $option_value['price_prefix']; ?><span id="newPrice"><?php echo $option_value['price']; ?></span>)
-                                                <?php } ?>
                                                 </option>
                                                 <?php } ?>
                                             </select>

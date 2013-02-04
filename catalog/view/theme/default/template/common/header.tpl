@@ -107,24 +107,14 @@ DD_belatedPNG.fix('#logo img');
 <?php echo $google_analytics; ?>
 <script type="text/javascript">
     $(document).ready(function() {
-        $('.option').change(function() {
-            var OriginalPrice = $('#thisIsOriginal').text();
-            var OriginalCurrency = OriginalPrice.substring(OriginalPrice.length-3, OriginalPrice.length);// OriginalPrice.substring(0, 1);
-            //OriginalPrice = OriginalPrice.substring(1);
-
-            var newPriceValue = $('.option :selected').text();
-            var position1 = newPriceValue.indexOf("(");
-            var position2 = newPriceValue.indexOf(")");
-            position1 = position1+1;
-            var finalPriceValue = newPriceValue.substring(position1, position2-4);
-            if(newPriceValue.indexOf('.') == -1)
-            {
-                finalPriceValue = "0";
+        $('input:radio[name^="option"]').change(function() {
+            if($(this).is(":checked")) {
+                var rawOptions = $(this).next().text();
+                var indexOpenSkob  = rawOptions.indexOf("(");
+                var indexCloseSkob = rawOptions.indexOf(")");
+                var newPrice       = rawOptions.substr(indexOpenSkob+1, indexCloseSkob-indexOpenSkob-1).trim();
+                $('#priceUpdate').text(newPrice);
             }
-            finalPriceValue = parseFloat(finalPriceValue) + parseFloat(OriginalPrice);
-            finalPriceValue = finalPriceValue.toFixed(2);
-
-            $('#priceUpdate').text(finalPriceValue + OriginalCurrency);
         });
     });
 </script>

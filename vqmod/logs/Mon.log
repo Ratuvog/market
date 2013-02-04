@@ -297,3 +297,614 @@ SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . s
 ----------------------------------------------------------------------
 
 
+---------- Date: 2013-02-04 18:30:48 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&amp;path=20&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 18:33:23 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&amp;path=20&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 18:33:39 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&amp;path=20&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 18:34:21 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&amp;path=20&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 18:37:13 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&amp;path=20&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 18:39:29 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&amp;path=20&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 18:56:01 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&amp;path=20&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 18:58:49 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&amp;path=20&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 18:59:11 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&amp;path=20&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:00:42 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:00:44 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=common/login
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:00:45 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=common/home&amp;token=89f5a4e81ab3abcc2f96206e1e571417
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:00:45 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=common/home/chart&amp;token=89f5a4e81ab3abcc2f96206e1e571417&amp;range=day
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:00:47 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/product&amp;token=89f5a4e81ab3abcc2f96206e1e571417
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:00:49 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/product/update&amp;token=89f5a4e81ab3abcc2f96206e1e571417&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:00:49 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/filter/get&amp;token=89f5a4e81ab3abcc2f96206e1e571417&amp;product_id=42&amp;path=20_28
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:01:39 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/product/update&amp;token=89f5a4e81ab3abcc2f96206e1e571417&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:01:39 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/product&amp;token=89f5a4e81ab3abcc2f96206e1e571417
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:01:43 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&amp;path=20&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:02:08 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/product/update&amp;token=89f5a4e81ab3abcc2f96206e1e571417&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:02:08 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/filter/get&amp;token=89f5a4e81ab3abcc2f96206e1e571417&amp;product_id=42&amp;path=20_28
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:02:21 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/product/update&amp;token=89f5a4e81ab3abcc2f96206e1e571417&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:02:21 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/product&amp;token=89f5a4e81ab3abcc2f96206e1e571417
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:02:27 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&amp;path=20&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:03:37 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/product/update&amp;token=89f5a4e81ab3abcc2f96206e1e571417&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:03:38 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/filter/get&amp;token=89f5a4e81ab3abcc2f96206e1e571417&amp;product_id=42&amp;path=20_28
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:03:50 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/option&amp;token=89f5a4e81ab3abcc2f96206e1e571417
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:03:53 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/option/update&amp;token=89f5a4e81ab3abcc2f96206e1e571417&amp;option_id=5
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:06:51 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/product&amp;token=89f5a4e81ab3abcc2f96206e1e571417
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:06:53 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/product/update&amp;token=89f5a4e81ab3abcc2f96206e1e571417&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:06:54 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/filter/get&amp;token=89f5a4e81ab3abcc2f96206e1e571417&amp;product_id=42&amp;path=20_28
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:07:09 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/product/update&amp;token=89f5a4e81ab3abcc2f96206e1e571417&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:07:09 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/product&amp;token=89f5a4e81ab3abcc2f96206e1e571417
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:07:53 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/product/update&amp;token=89f5a4e81ab3abcc2f96206e1e571417&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:07:53 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/filter/get&amp;token=89f5a4e81ab3abcc2f96206e1e571417&amp;product_id=42&amp;path=20_28
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:08:20 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/product/update&amp;token=89f5a4e81ab3abcc2f96206e1e571417&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:08:20 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/product&amp;token=89f5a4e81ab3abcc2f96206e1e571417
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:08:22 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/product/update&amp;token=89f5a4e81ab3abcc2f96206e1e571417&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:08:22 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /admin/index.php?route=catalog/filter/get&amp;token=89f5a4e81ab3abcc2f96206e1e571417&amp;product_id=42&amp;path=20_28
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:08:31 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&amp;path=20&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:10:44 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&amp;path=20&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:11:00 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&amp;path=20&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:11:15 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&amp;path=20&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:11:26 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&amp;path=20&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:11:46 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&amp;path=20&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:12:05 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&amp;path=20&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-02-04 19:13:23 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&amp;path=20&amp;product_id=42
+MOD DETAILS:
+   modFile   : /home/dmitry/st.whidofit.ru/vqmod/xml/all_in_one.xml
+   id        : oc-modules-folder
+   version   : 0.0.1alpha
+   vqmver    : 2.1.5-opencart
+   author    : @horechek
+SEARCH NOT FOUND (ABORTING MOD): if (is_file(DIR_APPLICATION . 'controller/' . str_replace('../', '', $path) . '.php')) {
+
+----------------------------------------------------------------------
+
+
