@@ -34,6 +34,7 @@
 <link rel="stylesheet" href="catalog/view/javascript/jquery/jquery.rating/styles/jquery.rating.css" />
 <link rel="stylesheet" href="catalog/view/javascript/jquery/jquery.rating/styles/styles.css" />
 <link rel="stylesheet" href="catalog/view/javascript/jquery/jQueryRaterPlugin/style.css" />
+<link rel="stylesheet" href="/catalog/view/javascript/jquery/star-rating/jquery.rating.css" />
 
     <script src="catalog/view/javascript/bootstrap/jquery.js"></script>
 <script type="text/javascript" src="catalog/view/javascript/jquery/ui/jquery-ui-1.8.16.custom.min.js"></script>
@@ -68,6 +69,7 @@
 <script type="text/javascript" src="catalog/view/javascript/jquery/spinner.js"></script>
 <script type="text/javascript" src="catalog/view/javascript/jquery/jquery.rating/js/jquery.rating-2.0.js"></script>
 <script type="text/javascript"src="catalog/view/javascript/jquery/jQueryRaterPlugin/jquery.rater.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/jquery/star-rating/jquery.rating.pack.js"></script>
 <script type="text/javascript">
     $(window).load(function() {
         $('.flexslider').flexslider();

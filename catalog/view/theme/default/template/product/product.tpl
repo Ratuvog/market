@@ -80,11 +80,15 @@
 
                                     <span class="span3">Рейтинг: </span>
                                     <span class="span6">
-                                        <div id="rating_1" class="statVal">
-                                            <div class="statVal">
-                                                <span class="ui-rater-starsOff" style="width:90px;"><span class="ui-rater-starsOn" style="width:63px"></span></span>
-                                            </div>
-                                        </div>
+                                        <? $i=1;
+                                        for($j=1;$j<=5;$j++) {
+                                        ?>
+                                        <? if($j==$rating) { ?>
+                                        <input name="star1" type="radio" class="star" checked="checked" disabled="disabled"/>
+                                        <? } else { ?>
+                                        <input name="star1" type="radio" class="star" disabled="disabled"/>
+                                        <? } ?>
+                                        <? }?>
                                     </span>
                                     <span class="span2 number-product">Количество: </span>
                                     <span class="span8">
@@ -132,11 +136,15 @@
                                     <span class="span12 price-product"><h5><?=$product['price'];?></h5></span>
                                     <span class="span12">от 950 грамм</span>
                                     <span class="span12">
-                                        <div class="statVal rating_1">
-                                            <div class="statVal">
-                                                <span class="ui-rater-starsOff" style="width: 90px; cursor: pointer; "><span class="ui-rater-starsOn" style="width: 63px; cursor: pointer; "></span></span>
-                                            </div>
-                                        </div>
+                                        <? $i=1;
+                                        for($j=1;$j<=5;$j++) {
+                                        ?>
+                                        <? if($j==$rating) { ?>
+                                        <input name="star<?=$product['name'].$j;?>" type="radio" class="star" checked="checked" disabled="disabled"/>
+                                        <? } else { ?>
+                                        <input name="star<?=$product['name'].$j;?>" type="radio" class="star" disabled="disabled"/>
+                                        <? } ?>
+                                        <? }?>
                                     </span>
                                 </td>
                             </tr>

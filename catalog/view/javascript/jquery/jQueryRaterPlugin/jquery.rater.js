@@ -7,22 +7,22 @@ $.fn.rater = function(options) {
         var $on = $this.find('.ui-rater-starsOn');
         var $off = $this.find('.ui-rater-starsOff');
         opts.size = $on.height();
-        if (opts.rating == undefined) opts.rating = $on.width() / opts.size;
+        if (opts.rating == undefined) opts.rating = $on.attr('data-rating');
         if (opts.id == undefined) opts.id = $this.attr('id');
 
-        $off.mousemove(function(e) {
-            var left = e.clientX - $off.offset().left;
-            var width = $off.width() - ($off.width() - left);
-            width = Math.ceil(width / (opts.size / opts.step)) * opts.size / opts.step;
-            $on.width(width);
-        }).hover(function(e) { $on.addClass('ui-rater-starsHover'); }, function(e) {
-            $on.removeClass('ui-rater-starsHover'); $on.width(opts.rating * opts.size);
-        }).click(function(e) {
-            var r = Math.round($on.width() / $off.width() * (opts.units * opts.step)) / opts.step;
-            $off.unbind('click').unbind('mousemove').unbind('mouseenter').unbind('mouseleave');
-            $off.css('cursor', 'default'); $on.css('cursor', 'default');
-            $.fn.rater.rate($this, opts, r);
-        }).css('cursor', 'pointer'); $on.css('cursor', 'pointer');
+//        $off.mousemove(function(e) {
+//            var left = e.clientX - $off.offset().left;
+//            var width = $off.width() - ($off.width() - left);
+//            width = Math.ceil(width / (opts.size / opts.step)) * opts.size / opts.step;
+//            $on.width(width);
+//        }).hover(function(e) { $on.addClass('ui-rater-starsHover'); }, function(e) {
+//            $on.removeClass('ui-rater-starsHover'); $on.width(opts.rating * opts.size);
+//        }).click(function(e) {
+//            var r = Math.round($on.width() / $off.width() * (opts.units * opts.step)) / opts.step;
+//            $off.unbind('click').unbind('mousemove').unbind('mouseenter').unbind('mouseleave');
+//            $off.css('cursor', 'default'); $on.css('cursor', 'default');
+//            $.fn.rater.rate($this, opts, r);
+//        }).css('cursor', 'pointer'); $on.css('cursor', 'pointer');
     });
 };
 
