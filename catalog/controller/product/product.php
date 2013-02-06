@@ -94,8 +94,8 @@ class ControllerProductProduct extends Controller {
 
 		$product_info = $this->model_catalog_product->getProduct($product_id);
 
-		$this->data['product_info'] = $product_info;
-
+		$this->data['product_info']  = $product_info;
+                $this->data['category_name'] = $this->model_catalog_product->getCategories($product_id);
 		if ($product_info) {
 			$url = '';
 
@@ -339,14 +339,15 @@ class ControllerProductProduct extends Controller {
 				}
 
 				$this->data['products'][] = array(
-					'product_id' => $result['product_id'],
+					'product_id'     => $result['product_id'],
 					'thumb'   	 => $image,
 					'name'    	 => $result['name'],
 					'price'   	 => $price,
 					'special' 	 => $special,
-					'rating'     => $rating,
-					'reviews'    => sprintf($this->language->get('text_reviews'), (int)$result['reviews']),
+					'rating'         => $rating,
+					'reviews'        => sprintf($this->language->get('text_reviews'), (int)$result['reviews']),
 					'href'    	 => $this->url->link('product/product', 'product_id=' . $result['product_id']),
+                                        'category_name'  => $this->model_catalog_product->getCategories($result['product_id'])
 				);
 			}
 

@@ -35,6 +35,7 @@
 <link rel="stylesheet" href="catalog/view/javascript/jquery/jquery.rating/styles/styles.css" />
 <link rel="stylesheet" href="catalog/view/javascript/jquery/jQueryRaterPlugin/style.css" />
 <link rel="stylesheet" href="/catalog/view/javascript/jquery/star-rating/jquery.rating.css" />
+<link rel="stylesheet" href="catalog/view/javascript/jquery/pnotify-1.2.0/jquery.pnotify.default.css" />
 
     <script src="catalog/view/javascript/bootstrap/jquery.js"></script>
 <script type="text/javascript" src="catalog/view/javascript/jquery/ui/jquery-ui-1.8.16.custom.min.js"></script>
@@ -61,6 +62,7 @@
 <script src="catalog/view/javascript/bootstrap/bootstrap-carousel.js"></script>
 <script src="catalog/view/javascript/bootstrap/bootstrap-typeahead.js"></script>
 <script src="catalog/view/javascript/bootstrap/bootstrap-affix.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/jquery/pnotify-1.2.0/jquery.pnotify.min.js"></script>
 
 <script src="catalog/view/javascript/bootstrap/holder.js"></script>
 <script src="catalog/view/javascript/bootstrap/prettify.js"></script>
@@ -72,6 +74,7 @@
 <script type="text/javascript" src="catalog/view/javascript/jquery/star-rating/jquery.rating.pack.js"></script>
 <script type="text/javascript">
     $(window).load(function() {
+        $.pnotify.defaults.history = false;
         $('.flexslider').flexslider();
         $(".spinner").spinner();
         /*$("#rating_1").rating({

@@ -111,7 +111,7 @@
                                             </div>
                                             <table>
                                                 <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
-                                                <tr class="cart-button"  id="button-cart" >
+                                                <tr id="button-cart" class="cart-button-main" >
                                                     <td class="cart-button-image"></td>
                                                     <td class="cart-button-text">Добавить в корзину</td>
                                                 </tr>
@@ -139,7 +139,7 @@
                         <tbody><tr>
                                 <td style="width: 40%"><img class="product-img" src="<?=$product['thumb'];?>" alt="<?=$product['name'];?>"></td>
                                 <td style="width: 60%">
-                                    <span class="span12 muted" style="margin-left: 5px;">Протеин</span>
+                                    <span class="span12 muted" style="margin-left: 5px;"><?=$product['category_name'];?></span>
                                     <span class="span12 price-product"><h5><?=$product['price'];?></h5></span>
                                     <span class="span12">от 950 грамм</span>
                                     <span class="span12" >
@@ -159,7 +159,7 @@
                                 <td colspan="2">
                                     <div class="span6">
                                         <table>
-                                            <tbody><tr class="cart-button">
+                                            <tbody><tr class="cart-button" onclick="addToCart('<?php echo $product['product_id']; ?>');">
                                                     <td class="cart-button-image"></td>
                                                     <td class="cart-button-text">В корзину</td>
                                                 </tr>
@@ -202,7 +202,14 @@ $('#button-cart').bind('click', function() {
 			}
 
 			if (json['success']) {
-				$('#notification').html('<div class="success" style="display: none;">' + json['success'] + '<img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>');
+
+                                $.pnotify({
+                                    title: 'Товар добавлен',
+                                    text: json['success'],
+                                    type: 'success'
+
+                                });
+
 
 				$('.success').fadeIn('slow');
 

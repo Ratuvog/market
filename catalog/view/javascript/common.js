@@ -132,11 +132,23 @@ function addToCart(product_id, quantity) {
 			}
 
 			if (json['success']) {
-				$('#notification').html('<div class="success" style="display: none;">' + json['success'] + '<img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>');
+				$.pnotify({
+                                    title: 'Товар добавлен',
+                                    text: json['success'],
+                                    type: 'success'
+
+                                });
+
 
 				$('.success').fadeIn('slow');
 
-				$('#cart-total').html(json['total']);
+                                $("#cart-total").html('<a href=""><i class="icon-download-alt"></i> <span id="quantityProduct">'+json['text_count_product']
+                                    + '</span> <i class="icon-shopping-cart"></i><span id="totalProduct">'+json['text_price']+'</span></a>');
+
+//                                $("#quantityProduct").html(json['text_count_product']);
+//                                $("#totalProduct").html(json['text_price']);
+
+//				$('#cart-total').html(json['total']);
 
 				$('html, body').animate({ scrollTop: 0 }, 'slow');
 			}

@@ -584,7 +584,8 @@ class ControllerCheckoutCart extends Controller {
 				}
 				$json['text_count_product'] = sprintf($this->language->get('text_count_product'),$this->cart->countProducts());
                                 $json['text_price']         = sprintf($this->language->get('text_price'), $this->currency->format($total));
-				$json['total'] = sprintf($this->language->get('text_items'), $this->cart->countProducts() + (isset($this->session->data['vouchers']) ? count($this->session->data['vouchers']) : 0), $this->currency->format($total));
+                                $json['text_alert']         = sprintf($this->language->get('text_alert'), $this->cart->countProducts(), $product_info['name']);
+ 				$json['total'] = sprintf($this->language->get('text_items'), $this->cart->countProducts() + (isset($this->session->data['vouchers']) ? count($this->session->data['vouchers']) : 0), $this->currency->format($total));
 			} else {
 				$json['redirect'] = str_replace('&amp;', '&', $this->url->link('product/product', 'product_id=' . $this->request->post['product_id']));
 			}

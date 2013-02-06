@@ -121,7 +121,7 @@ h3.product-headers {
     color: white;
 }
 
-.cart-button:hover td{
+.cart-button:hover td, .cart-button-main:hover td{
     cursor: pointer;
     background-color: green;
 }

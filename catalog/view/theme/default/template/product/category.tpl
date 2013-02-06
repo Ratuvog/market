@@ -16,15 +16,19 @@
                     <tbody><tr>
                             <td style="width: 40%"><img class="product-img" src="<?=$product['thumb'];?>" alt="<?=$product['name'];?>"></td>
                             <td style="width: 60%">
-                                <span class="span12 muted" style="margin-left: 5px;">Протеин</span>
+                                <span class="span12 muted" style="margin-left: 5px;"><?=$product['category_name'];?></span>
                                 <span class="span12 price-product"><h5><?=$product['price'];?></h5></span>
                                 <span class="span12">от 950 грамм</span>
                                 <span class="span12">
-                                    <div class="statVal rating_1">
-                                        <div class="statVal">
-                                            <span class="ui-rater-starsOff" style="width: 90px; cursor: pointer; "><span class="ui-rater-starsOn" style="width: 63px; cursor: pointer; "></span></span>
-                                        </div>
-                                    </div>
+                                    <? $i=1;
+                                        for($j=1;$j<=5;$j++) {
+                                        ?>
+                                        <? if($j==$product['rating']) { ?>
+                                        <input name="star<?=$product['name'].$j;?>" type="radio" class="star" checked="checked" disabled="disabled"/>
+                                        <? } else { ?>
+                                        <input name="star<?=$product['name'].$j;?>" type="radio" class="star" disabled="disabled"/>
+                                        <? } ?>
+                                        <? }?>
                                 </span>
                             </td>
                         </tr>
@@ -32,7 +36,7 @@
                             <td colspan="2">
                                 <div class="span6">
                                     <table>
-                                        <tbody><tr class="cart-button">
+                                        <tbody><tr class="cart-button" onclick="addToCart('<?php echo $product['product_id']; ?>');">
                                                 <td class="cart-button-image"></td>
                                                 <td class="cart-button-text">В корзину</td>
                                             </tr>
