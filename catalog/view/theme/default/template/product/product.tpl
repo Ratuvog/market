@@ -7,7 +7,7 @@
     <?php } ?>
   </div>
   <div class="row-fluid">
-            <div class="span9 description-product">
+            <div class="span9 description-product product-info">
                 <div class="row-fluid">
                     <!-- Картинки -->
                     <div class="span5">
@@ -45,7 +45,7 @@
                                     <?php foreach ($options as $option) { ?>
                                         <? if($option['type'] == 'radio') { ?>
                                         <span class="span3"><?php echo $option['name']; ?>: </span>
-                                        <span class="span7 change-weight">
+                                        <span class="span7 change-weight product-info">
                                             <?php foreach ($option['option_value'] as $option_value) {
                                             if($i!=0) {
                                             ?>
@@ -72,10 +72,9 @@
                                         <span class="span3 flavor-product"><?php echo $option['name']; ?>: </span>
                                         <span class="span6">
                                             <select name="option[<?php echo $option['product_option_id']; ?>]">
-                                                <option value=""><?php echo $text_select; ?></option>
-                                                <?php foreach ($option['option_value'] as $option_value) { ?>
-                                                <option value="<?php echo $option_value['product_option_value_id']; ?>"><?php echo $option_value['name']; ?>
-                                                    
+.                                                <?php foreach ($option['option_value'] as $option_value) { ?>
+                                                <option value="<?php echo $option_value['product_option_value_id']; ?>">
+                                                    <?php echo $option_value['name']; ?>
                                                 </option>
                                                 <?php } ?>
                                             </select>
@@ -111,7 +110,8 @@
                                                 </div>
                                             </div>
                                             <table>
-                                                <tr class="cart-button" onclick="addToCart('<?php echo $product['product_id']; ?>');">
+                                                <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
+                                                <tr class="cart-button"  id="button-cart" >
                                                     <td class="cart-button-image"></td>
                                                     <td class="cart-button-text">Добавить в корзину</td>
                                                 </tr>
@@ -142,7 +142,7 @@
                                     <span class="span12 muted" style="margin-left: 5px;">Протеин</span>
                                     <span class="span12 price-product"><h5><?=$product['price'];?></h5></span>
                                     <span class="span12">от 950 грамм</span>
-                                    <span class="span12">
+                                    <span class="span12" >
                                         <? $i=1;
                                         for($j=1;$j<=5;$j++) {
                                         ?>
@@ -206,7 +206,13 @@ $('#button-cart').bind('click', function() {
 
 				$('.success').fadeIn('slow');
 
-				$('#cart-total').html(json['total']);
+                                $("#cart-total").html('<a href=""><i class="icon-download-alt"></i> <span id="quantityProduct">'+json['text_count_product']
+                                    + '</span> <i class="icon-shopping-cart"></i><span id="totalProduct">'+json['text_price']+'</span></a>');
+
+//                                $("#quantityProduct").html(json['text_count_product']);
+//                                $("#totalProduct").html(json['text_price']);
+
+//				$('#cart-total').html(json['total']);
 
 				$('html, body').animate({ scrollTop: 0 }, 'slow');
 			}

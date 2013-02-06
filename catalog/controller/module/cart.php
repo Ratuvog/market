@@ -25,7 +25,7 @@ class ControllerModuleCart extends Controller {
 			foreach ($results as $key => $value) {
 				$sort_order[$key] = $this->config->get($value['code'] . '_sort_order');
 			}
-
+//                        print_r($results);
 			array_multisort($sort_order, SORT_ASC, $results);
 
 			foreach ($results as $result) {
@@ -34,7 +34,6 @@ class ControllerModuleCart extends Controller {
 
 					$this->{'model_total_' . $result['code']}->getTotal($total_data, $total, $taxes);
 				}
-
 				$sort_order = array();
 
 				foreach ($total_data as $key => $value) {
